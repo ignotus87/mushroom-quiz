@@ -1,5 +1,5 @@
 const speciesImport = import("./Species/speciesList.json", {
-    with: { type: 'json' }
+    assert: { type: 'json' }
 });
 
 speciesImport.then(data => {
