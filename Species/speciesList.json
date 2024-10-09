@@ -1,0 +1,34 @@
+[
+  {
+    "ID": 1,
+    "Name": "gyilkos galóca",
+    "Category": "Amanita phalloides",
+    "ImageSource": [ "https://www.facebook.com/gyilkosgomba/" ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 2,
+    "Name": "büdös galambgomba",
+    "Category": "Russula foetens",
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/B%C3%BCd%C3%B6s_galambgomba" ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 3,
+    "Name": "nagy őzlábgomba",
+    "Category": "Macrolepiota procera",
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Nagy_%C5%91zl%C3%A1bgomba" ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 4,
+    "Name": "őzlábgalóca",
+    "Category": "Saproamanita vittadinii",
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/%C5%90zl%C3%A1bgal%C3%B3ca" ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  }
+]

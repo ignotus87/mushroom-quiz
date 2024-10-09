@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gombakvíz</title>
+    <script>
+
+        var jsons = [];
+
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .right {
+            color: darkGreen;
+        }
+
+        .wrong {
+            color: red;
+        }
+
+        .table {
+            display: table;
+            margin: 0 auto;
+        }
+
+        ul#horizontal-list {
+            min-width: 696px;
+            list-style: none;
+            padding-top: 20px;
+        }
+
+            ul#horizontal-list li {
+                display: inline;
+            }
+
+        .choice {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            width: 99%;
+        }
+
+        .puzzle-container {
+            text-align: center;
+        }
+
+        .comment-on-answer {
+            text-align: center;
+            font-size: 2em;
+            background-color: white;
+        }
+
+        .game-title {
+            font-size: 2em;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .title {
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .right-selected {
+            background-color: green;
+        }
+
+        .wrong-selected {
+            background-color: red;
+        }
+        /* Container holding the image and the text */
+        .puzzle-image-container {
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+
+        .puzzle-image {
+            max-width: 100%;
+            max-height: 600px;
+        }
+
+        /* Centered text */
+        .puzzle-image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+
+        .overlay {
+            filter: blur(10px);
+            -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+        }
+
+        .show {
+            display: auto;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .next-button {
+            z-index: 999;
+            font-size: 1.3em;
+        }
+
+        body {
+            background-image: url(Images/background.jpg);
+            display: flex;
+            min-height: 98vh;
+            flex-direction: column;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        #app {
+            flex-grow: 1;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .header, .header a {
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .choice-container {
+            display: grid;
+            grid-template-columns: 0.8fr;
+            justify-content: center;
+        }
+
+        .choice-container .choice {
+            height: 100%;
+        }
+
+        .choice {
+            max-width: 95%;
+        }
+
+        @media (min-width: 768px) {
+            /*For mobile phones */
+            .choice-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <div id="app">
+        <div class="header">
+            <div>
+                <div class="title">{{ title }}</div> |
+                Pontszám: {{ totalPoints }} / {{ numberOfAnsweredQuestions }} ({{ correctRatio }}) | Hibák: {{ mistakeIndexes.length }} <span :class="{ show: mistakeIndexes.length > 0, hide: mistakeIndexes.length === 0 }">| <button @click="restartWithMistakes()">Hibásak gyakorlása</button></span> | <button @click="reset()">Újrakezdés</button>
+                | <a href="mailto:mushroomquiz1@gmail.com?subject=Visszajelzés a weboldalról">Visszajelzés küldése</a>
+            </div>
+        </div>
+
+        <div class="puzzle-container">
+            <p class="game-title">{{ gameTitle }}</p>
+            <div>{{ actualIndex }}/{{ totalPuzzleItemsCount }}</div>
+            <div class="puzzle-image-container">
+                <img class="puzzle-image" v-bind:src="puzzleImage" :class="{ 'overlay': isAnswered }" alt="Mi ez a hal?" />
+                <div class="puzzle-image-text comment-on-answer">
+                    <span v-html="commentToShow"></span>
+                    <div>
+                        <button class="next-button" :class="{ 'show': isAnswered, 'hide': !isAnswered }" @click="continueAfterAnswer()">Tovább ({{ timeoutSeconds }})</button>
+                    </div>
+                </div>
+                <i><small><br />Forrás: <a v-bind:href="puzzle.ImageSource" target="_blank">{{ imageSource }}</a></small></i>
+            </div>
+
+            <div class="choice-container">
+                <div class="choice">
+                    <button :class="{ 'right-selected': choiceIsRight[0], 'wrong-selected': choiceIsWrong[0] }" class="choice" @click="answered(choices[0])">{{ choices[0] }}</button>
+                </div>
+                <div class="choice">
+                    <button :class="{ 'right-selected': choiceIsRight[1], 'wrong-selected': choiceIsWrong[1] }" class="choice" @click="answered(choices[1])">{{ choices[1] }}</button>
+                </div>
+                <div class="choice">
+                    <button :class="{ 'right-selected': choiceIsRight[2], 'wrong-selected': choiceIsWrong[2] }" class="choice" @click="answered(choices[2])">{{ choices[2] }}</button>
+                </div>
+                <div class="choice">
+                    <button :class="{ 'right-selected': choiceIsRight[3], 'wrong-selected': choiceIsWrong[3] }" class="choice" @click="answered(choices[3])">{{ choices[3] }}</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Background by <a href="https://www.freepik.com/free-vector/school-fishes-background-with-deep-sea_2235607.htm#query=fish%20background&position=10&from_view=keyword&track=ais" target="_blank">Freepik</a>
+    </div>
+
+    <script type="module" src="./selectNameByImage.js"></script>
+
+</body>
+
+</html>
