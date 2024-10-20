@@ -89,6 +89,24 @@ speciesImport.then(data => {
             },
             isRightAnswer() {
                 return !this.isWrongAnswer;
+            },
+            edibilityInfo() {
+                let temp = '';
+                if (this.puzzle.IsProtected !== undefined && this.puzzle.IsProtected) {
+                    temp += 'védett, ';
+                }
+                if (this.puzzle.EdibilityCategory !== undefined) {
+                    if (this.puzzle.EdibilityCategory === 'edible') {
+                        temp += "ehető";
+                    } else if (this.puzzle.EdibilityCategory === 'nonEdible') {
+                        temp += "nem ehető";
+                    } else if (this.puzzle.EdibilityCategory === 'poisonous') {
+                        temp += "MÉRGEZŐ";
+                    } else {
+                        temp += "???";
+                    }
+                }
+                return temp;
             }
         },
         methods: {
@@ -170,7 +188,7 @@ speciesImport.then(data => {
                 var indexOfAnswer = this.choices.indexOf(answer);
 
                 if (this.isCorrect(answer)) {
-                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
+                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/>' + this.puzzle.DistinctionInfo;
                     this.choiceIsRight[indexOfAnswer] = true;
                     this.totalPoints++;
                     this.numberOfCorrectAnswers++;
@@ -180,7 +198,7 @@ speciesImport.then(data => {
                 else {
                     this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="Helytelen!" />' + answer + '<br/>' +
                         '<img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes:">' + this.puzzle.Name + '</p>' +
-                        '<i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
+                        '<i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/>' + this.puzzle.DistinctionInfo;
                     this.choiceIsWrong[indexOfAnswer] = true;
                     this.mistakeIndexes.push(this.puzzle.ID);
                     var indexOfCorrectAnswer = this.choices.indexOf(this.puzzleName);
@@ -194,9 +212,9 @@ speciesImport.then(data => {
 
                 ++this.numberOfAnsweredQuestions;
 
-				if (this.numberOfAnsweredQuestions == this.totalPuzzleItemsCount) {
-					this.endGame();
-				}
+                if (this.numberOfAnsweredQuestions == this.totalPuzzleItemsCount) {
+                    this.endGame();
+                }
 
             },
             countdownToContinue() {
@@ -264,12 +282,12 @@ speciesImport.then(data => {
                 }
 
                 if (this.previousPuzzleIDs.length == this.totalPuzzleItemsCount) {
-					if (!this.isEndOfGame) {
-						this.endGame();
-					}
-					else {
-						this.reset();
-					}
+                    if (!this.isEndOfGame) {
+                        this.endGame();
+                    }
+                    else {
+                        this.reset();
+                    }
                 }
                 else {
                     this.nextPuzzle();
