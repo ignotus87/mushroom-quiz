@@ -30,5 +30,43 @@
     "ImageSource": [ "https://hu.wikipedia.org/wiki/%C5%90zl%C3%A1bgal%C3%B3ca" ],
     "SimilarSpecies": [],
     "DistinctionInfo": ""
+  },
+  {
+    "ID": 5,
+    "Name": "fehér tarlógomba",
+    "Category": "Leucoagaricus leucothies",
+    "ImageSource": [ "https://micologica-barakaldo.org/leucoagaricus-leucothites/",
+		"https://hu.wikipedia.org/wiki/F%C3%A1jl:Leucoagaricus_leucothites_20101004wc.JPG"	],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 6,
+    "Name": "ragadós bocskorosgomba",
+    "Category": "Volvopluteus gloicephalus",
+    "ImageSource": [ "https://en.wikipedia.org/wiki/Volvopluteus_gloiocephalus#/media/File:Volvopluteus_SoCal.jpg",
+		"https://en.wikipedia.org/wiki/Volvopluteus_gloiocephalus#/media/File:Volvopluteus_gloiocephalus_JPG4.jpg",
+		"https://en.wikipedia.org/wiki/Volvopluteus_gloiocephalus#/media/File:Volvopluteus_gloiocephalus_(DC.)_Vizzini,_Contu_&_Justo_138276.jpg"	],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 7,
+    "Name": "mezei szegfűgomba",
+    "Category": "Marasmius oreades",
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Mezei_szegf%C5%B1gomba",
+		"https://www.gombacsoda.hu/photos/photos_640_larger/mezei_szegf%C5%B1gomba/default.jpg"	],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 8,
+    "Name": "légyölő galóca",
+    "Category": "Amanita muscaria",
+    "ImageSource": [ "https://www.turistamagazin.hu/galeria/a-legyolo-galoca-bemutatjuk-a-mesegombat/227017",
+		"https://fortissimafungus.com/gombak/legyolo-galoca/",
+		"https://fortissimafungus.com/gombak/legyolo-galoca/"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
   }
 ]

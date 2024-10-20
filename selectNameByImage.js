@@ -161,7 +161,7 @@ speciesImport.then(data => {
                 var indexOfAnswer = this.choices.indexOf(answer);
 
                 if (this.isCorrect(answer)) {
-                    this.comment = '<i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
+                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
                     this.choiceIsRight[indexOfAnswer] = true;
                     this.totalPoints++;
                     this.numberOfCorrectAnswers++;
@@ -169,7 +169,9 @@ speciesImport.then(data => {
                     this.timeoutSeconds = 6;
                 }
                 else {
-                    this.comment = '<i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
+                    this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="Helytelen!" />' + answer + '<br/>' +
+                        '<img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes:">' + this.puzzle.Name + '</p>' +
+						'<i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
                     this.choiceIsWrong[indexOfAnswer] = true;
                     this.mistakeIndexes.push(this.puzzle.ID);
                     var indexOfCorrectAnswer = this.choices.indexOf(this.puzzleName);
