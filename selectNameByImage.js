@@ -35,10 +35,19 @@ speciesImport.then(data => {
                 gameType: 'all',
                 isWrongAnswer: false,
                 continueTimeoutHandle: null,
-                timeoutSeconds: 0
+                timeoutSeconds: 0,
+                isEndOfGame: true
             }
         },
         computed: {
+            nextButtonText() {
+                if (this.numberOfAnsweredQuestions >= this.totalPuzzleItemsCount) {
+                    return "Újrakezdés";
+                }
+                else {
+                    return "Tovább (" + this.timeoutSeconds + ")";
+                }
+            },
             totalSpeciesCount() {
                 return this.speciesList.length;
             },
@@ -171,7 +180,7 @@ speciesImport.then(data => {
                 else {
                     this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="Helytelen!" />' + answer + '<br/>' +
                         '<img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes:">' + this.puzzle.Name + '</p>' +
-						'<i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
+                        '<i>' + this.puzzle.Category + '</i><br/>' + this.puzzle.DistinctionInfo;
                     this.choiceIsWrong[indexOfAnswer] = true;
                     this.mistakeIndexes.push(this.puzzle.ID);
                     var indexOfCorrectAnswer = this.choices.indexOf(this.puzzleName);
@@ -185,6 +194,9 @@ speciesImport.then(data => {
 
                 ++this.numberOfAnsweredQuestions;
 
+				if (this.numberOfAnsweredQuestions == this.totalPuzzleItemsCount) {
+					this.endGame();
+				}
 
             },
             countdownToContinue() {
@@ -221,18 +233,21 @@ speciesImport.then(data => {
                 this.isWrongAnswer = false;
             },
             reset() {
+                this.isEndOfGame = false;
                 this.gameType = 'all';
                 this.puzzleItems = this.speciesList;
                 this.startQuiz()
                 this.mistakeIndexes = [];
             },
             restartWithMistakes() {
+                this.isEndOfGame = false;
                 this.gameType = 'mistakesOnly';
                 this.puzzleItems = this.speciesList.filter((item) => this.mistakeIndexes.includes(item.ID));
                 this.startQuiz()
                 this.mistakeIndexes = [];
             },
             endGame() {
+                this.isEndOfGame = true;
                 this.comment = "Vége a játéknak! Eredmény: " + Math.floor(this.totalPoints / this.numberOfAnsweredQuestions * 100) + '%';
             },
             randomizeChoices() {
@@ -248,8 +263,13 @@ speciesImport.then(data => {
                     clearTimeout(this.continueTimeoutHandle);
                 }
 
-                if (this.previousPuzzleIDs.length >= this.totalPuzzleItemsCount) {
-                    this.endGame();
+                if (this.previousPuzzleIDs.length == this.totalPuzzleItemsCount) {
+					if (!this.isEndOfGame) {
+						this.endGame();
+					}
+					else {
+						this.reset();
+					}
                 }
                 else {
                     this.nextPuzzle();
