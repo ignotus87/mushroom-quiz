@@ -68,5 +68,17 @@
 		"https://fortissimafungus.com/gombak/legyolo-galoca/"],
     "SimilarSpecies": [],
     "DistinctionInfo": ""
+  },
+  {
+    "ID": 9,
+    "Name": "tulipán-csészegomba",
+    "Category": "Sarcosphaera coronaria",
+	"IsEdible": true,
+	"IsProtected": false,
+	"IsPoisonous": true,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Tulip%C3%A1n-cs%C3%A9szegomba#/media/F%C3%A1jl:Sarcosphaera_coronaria_42754.jpg",
+		"https://gombahatarozasaim.blogspot.com/2013/05/sarcosphaera-coronaria-tulipan.html"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
   }
 ]
