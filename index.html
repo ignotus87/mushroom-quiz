@@ -115,7 +115,7 @@
         }
 
         .hide {
-            display: none;
+            display: none !important;
         }
 
         .next-button {
@@ -152,11 +152,11 @@
         }
 
         .choice-container .choice {
-            height: 100%;
         }
 
         .choice {
             max-width: 95%;
+			margin: 5px;
         }
 
         @media (min-width: 768px) {
@@ -169,6 +169,27 @@
 		.right-wrong-image {
             width: 30px;
         }
+		.bootstrap-button {
+			cursor: pointer;
+			outline: 0;
+			display: inline-block;
+			font-weight: 400;
+			line-height: 1.5;
+			text-align: center;
+			background-color: white;
+			border: 1px solid transparent;
+			padding: 6px 12px;
+			font-size: 1rem;
+			border-radius: .25rem;
+			transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+			color: #0d6efd;
+			border-color: #0d6efd;
+		}
+		.bootstrap-button:hover {
+			color: #fff;
+			background-color: #0d6efd;
+			border-color: #0d6efd;
+		}
     </style>
 </head>
 
@@ -180,7 +201,7 @@
         <div class="header">
             <div>
                 <div class="title">{{ title }}</div> |
-                Pontszám: {{ totalPoints }} / {{ numberOfAnsweredQuestions }} ({{ correctRatio }}) | Hibák: {{ mistakeIndexes.length }} <span :class="{ show: mistakeIndexes.length > 0, hide: mistakeIndexes.length === 0 }">| <button @click="restartWithMistakes()">Hibásak gyakorlása</button></span> | <button @click="reset()">Újrakezdés</button>
+                Pontszám: {{ totalPoints }} / {{ numberOfAnsweredQuestions }} ({{ correctRatio }}) | Hibák: {{ mistakeIndexes.length }} <span :class="{ show: mistakeIndexes.length > 0, hide: mistakeIndexes.length === 0 }">| <button class="bootstrap-button" @click="restartWithMistakes()">Hibásak gyakorlása</button></span> | <button class="bootstrap-button" @click="reset()">Újrakezdés</button>
                 | <a href="mailto:mushroomquiz1@gmail.com?subject=Visszajelzés a weboldalról">Visszajelzés küldése</a>
             </div>
         </div>
@@ -193,7 +214,7 @@
                 <div class="puzzle-image-text comment-on-answer">
                     <span v-html="commentToShow"></span>
                     <div>
-                        <button class="next-button" :class="{ 'show': isAnswered, 'hide': !isAnswered }" @click="continueAfterAnswer()">{{ nextButtonText }}</button>
+                        <button class="bootstrap-button next-button " :class="{ 'show': isAnswered, 'hide': !isAnswered }" @click="continueAfterAnswer()">{{ nextButtonText }}</button>
                     </div>
                 </div>
                 <i><small><br />Forrás: <a v-bind:href="puzzle.ImageSource" target="_blank">{{ imageSource }}</a></small></i>
@@ -201,16 +222,16 @@
 
             <div class="choice-container">
                 <div class="choice">
-                    <button :class="{ 'right-selected': choiceIsRight[0], 'wrong-selected': choiceIsWrong[0] }" class="choice" @click="answered(choices[0])">{{ choices[0] }}</button>
+                    <button :class="{ 'right-selected': choiceIsRight[0], 'wrong-selected': choiceIsWrong[0] }" class="choice bootstrap-button" @click="answered(choices[0])">{{ choices[0] }}</button>
                 </div>
                 <div class="choice">
-                    <button :class="{ 'right-selected': choiceIsRight[1], 'wrong-selected': choiceIsWrong[1] }" class="choice" @click="answered(choices[1])">{{ choices[1] }}</button>
+                    <button :class="{ 'right-selected': choiceIsRight[1], 'wrong-selected': choiceIsWrong[1] }" class="choice bootstrap-button" @click="answered(choices[1])">{{ choices[1] }}</button>
                 </div>
                 <div class="choice">
-                    <button :class="{ 'right-selected': choiceIsRight[2], 'wrong-selected': choiceIsWrong[2] }" class="choice" @click="answered(choices[2])">{{ choices[2] }}</button>
+                    <button :class="{ 'right-selected': choiceIsRight[2], 'wrong-selected': choiceIsWrong[2] }" class="choice bootstrap-button" @click="answered(choices[2])">{{ choices[2] }}</button>
                 </div>
                 <div class="choice">
-                    <button :class="{ 'right-selected': choiceIsRight[3], 'wrong-selected': choiceIsWrong[3] }" class="choice" @click="answered(choices[3])">{{ choices[3] }}</button>
+                    <button :class="{ 'right-selected': choiceIsRight[3], 'wrong-selected': choiceIsWrong[3] }" class="choice bootstrap-button" @click="answered(choices[3])">{{ choices[3] }}</button>
                 </div>
             </div>
         </div>
