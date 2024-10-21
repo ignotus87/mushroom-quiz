@@ -95,5 +95,103 @@
 		"https://gombahatarozasaim.blogspot.com/2013/05/sarcosphaera-coronaria-tulipan.html"],
     "SimilarSpecies": [],
     "DistinctionInfo": ""
+  },
+  {
+    "ID": 10,
+    "Name": "narancsvörös álrókagomba",
+    "Category": "Hygrophoropsis aurantiaca",
+	"EdibilityCategory": "nonEdible",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Narancsv%C3%B6r%C3%B6s_%C3%A1lr%C3%B3kagomba",
+	"https://hu.wikipedia.org/wiki/Narancsv%C3%B6r%C3%B6s_%C3%A1lr%C3%B3kagomba#/media/F%C3%A1jl:Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_False_Chanterelle_-_Hygrophoropsis_aurantiaca_(37308805172).jpg",
+	"https://hu.wikipedia.org/wiki/Narancsv%C3%B6r%C3%B6s_%C3%A1lr%C3%B3kagomba#/media/F%C3%A1jl:False_Chanterelle_Hygrophoropsis_aurantiaca.jpg",
+	"https://hu.wikipedia.org/wiki/Narancsv%C3%B6r%C3%B6s_%C3%A1lr%C3%B3kagomba#/media/F%C3%A1jl:Radevormwald-0034.jpg",
+	"https://hu.wikipedia.org/wiki/Narancsv%C3%B6r%C3%B6s_%C3%A1lr%C3%B3kagomba#/media/F%C3%A1jl:Hygrophoropsis_aurantiaca_(30463836527).jpg"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Régebben ehetőnek mondták, de már nem ajánlják fogyasztásra, mert gyomorrontást okozhat."
+  },
+  {
+    "ID": 11,
+    "Name": "rőt áltrifla",
+    "Category": "Scleroderma citrinum",
+	"EdibilityCategory": "poisonous",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/R%C5%91t_%C3%A1ltrifla#/media/F%C3%A1jl:Scleroderma_citrinum.jpg",
+	"https://hu.wikipedia.org/wiki/R%C5%91t_%C3%A1ltrifla#/media/F%C3%A1jl:Earthballs_(908565114).jpg"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 12,
+    "Name": "begöngyöltszélű cölöpgomba",
+    "Category": "Paxillus involutus",
+	"EdibilityCategory": "poisonous",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Beg%C3%B6ngy%C3%B6ltsz%C3%A9l%C5%B1_c%C3%B6l%C3%B6pgomba#/media/F%C3%A1jl:Paxillus_involutus_2.JPG",
+		"https://hu.wikipedia.org/wiki/Beg%C3%B6ngy%C3%B6ltsz%C3%A9l%C5%B1_c%C3%B6l%C3%B6pgomba#/media/F%C3%A1jl:Paxillus_involutus234.JPG"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Többszöri fogyasztása allergiás reakciót, sőt halált is okozhat."
+  },
+  {
+    "ID": 13,
+    "Name": "barna csengettyűgomba",
+    "Category": "Pluteus cervinus",
+	"EdibilityCategory": "edible",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Barna_csengetty%C5%B1gomba#/media/F%C3%A1jl:Pluteus.cervinus.-.lindsey.jpg",
+		"https://foragerchef.com/the-fawndeer-mushroom-pluteus-cervinus/",
+		"https://foragerchef.com/the-fawndeer-mushroom-pluteus-cervinus/",
+		"https://www.gombacsoda.hu/gombak/barna_csengetty%C5%B1gomba",
+		"https://www.gombacsoda.hu/gombak/barna_csengetty%C5%B1gomba",
+		"https://www.gombacsoda.hu/gombak/barna_csengetty%C5%B1gomba"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 14,
+    "Name": "osztrák csészegomba",
+    "Category": "Sarcoscypha austriaca",
+	"EdibilityCategory": "edible",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Osztr%C3%A1k_cs%C3%A9szegomba"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 15,
+    "Name": "elefántcsont-csigagomba",
+    "Category": "Hygrophorus eburneus",
+	"EdibilityCategory": "edible",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Elef%C3%A1ntcsont-csigagomba",
+		"https://hu.wikipedia.org/wiki/Elef%C3%A1ntcsont-csigagomba"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 16,
+    "Name": "fagyálló csigagomba",
+    "Category": "Hygrophorus hypothejus",
+	"EdibilityCategory": "edible",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Fagy%C3%A1ll%C3%B3_csigagomba",
+		"https://hu.wikipedia.org/wiki/Fagy%C3%A1ll%C3%B3_csigagomba",
+		"https://hu.wikipedia.org/wiki/Fagy%C3%A1ll%C3%B3_csigagomba",
+		"https://hu.wikipedia.org/wiki/Fagy%C3%A1ll%C3%B3_csigagomba"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 17,
+    "Name": "szagos csigagomba",
+    "Category": "Hygrophorus agathosmus",
+	"EdibilityCategory": "edible",
+	"IsProtected": false,
+    "ImageSource": [ "https://hu.wikipedia.org/wiki/Szagos_csigagomba#",
+		"https://hu.wikipedia.org/wiki/Szagos_csigagomba#",
+		"https://hu.wikipedia.org/wiki/Szagos_csigagomba#",
+		"https://hu.wikipedia.org/wiki/Szagos_csigagomba#"],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
   }
 ]

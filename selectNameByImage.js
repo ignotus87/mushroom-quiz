@@ -98,12 +98,14 @@ speciesImport.then(data => {
                 if (this.puzzle.EdibilityCategory !== undefined) {
                     if (this.puzzle.EdibilityCategory === 'edible') {
                         temp += "ehető";
+					} else if (this.puzzle.EdibilityCategory === 'conditionallyEdible') {
+                        temp += "feltételesen ehető";
                     } else if (this.puzzle.EdibilityCategory === 'nonEdible') {
                         temp += "nem ehető";
                     } else if (this.puzzle.EdibilityCategory === 'poisonous') {
                         temp += "MÉRGEZŐ";
                     } else {
-                        temp += "???";
+                        temp += "???" + this.puzzle.EdibilityCategory;
                     }
                 }
                 return temp;
