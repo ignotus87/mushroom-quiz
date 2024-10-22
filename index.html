@@ -15,6 +15,11 @@
             text-align: center;
         }
 
+        .link {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
         .right {
             color: darkGreen;
         }
@@ -219,7 +224,7 @@
                         <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">Új játék (összes faj)</button>
                     </div>
                 </div>
-                <i><small><br />Forrás: <a v-bind:href="puzzle.ImageSource" target="_blank">{{ imageSource }}</a></small></i>
+                <i><small><br />Forrás: <u class="link" @click="openImageSource()">{{ imageSource }}</u></small></i>
             </div>
 
             <div class="choice-container" :class="{ 'show': !isEndOfGame, 'hide': isEndOfGame }">

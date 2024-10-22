@@ -87,6 +87,9 @@ speciesImport.then(data => {
                     }
                 }
             },
+            openImageSource() {
+                window.open(this.puzzle.ImageSource[this.imageIndex], '_blank');
+            },
             isRightAnswer() {
                 return !this.isWrongAnswer;
             },
