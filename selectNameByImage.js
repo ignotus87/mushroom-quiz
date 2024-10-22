@@ -80,7 +80,7 @@ speciesImport.then(data => {
             },
             gameTitle() {
                 if (this.game === "SelectNameByImage") {
-                    if (this.gameType === 'all') {
+                    if (this.gameType === 'all' || this.gameType === '10') {
                         return "Melyik gombafajt látod a képen?";
                     } else {
                         return "Hibásak gyakorlása: Melyik gombafajt látod a képen?";
@@ -98,7 +98,7 @@ speciesImport.then(data => {
                 if (this.puzzle.EdibilityCategory !== undefined) {
                     if (this.puzzle.EdibilityCategory === 'edible') {
                         temp += "ehető";
-					} else if (this.puzzle.EdibilityCategory === 'conditionallyEdible') {
+                    } else if (this.puzzle.EdibilityCategory === 'conditionallyEdible') {
                         temp += "feltételesen ehető";
                     } else if (this.puzzle.EdibilityCategory === 'nonEdible') {
                         temp += "nem ehető";
@@ -122,6 +122,18 @@ speciesImport.then(data => {
                 this.previousPuzzleIDs.push(candidate.ID);
 
                 return candidate;
+            },
+            getThisNumberOfRandomSpecies(numberOfSpeciesToGet) {
+                let collectedSpecies = [];
+                let collectedIds = [];
+
+                for (let i = 0; i < numberOfSpeciesToGet; ++i) {
+                    var randomSpecies = this.getRandomSpeciesFromAllItemsExceptIDs(collectedIds);
+                    collectedSpecies.push(randomSpecies);
+                    collectedIds.push(randomSpecies.ID);
+                }
+
+                return collectedSpecies;
             },
             getRandomSpeciesFromPuzzleItemsExceptIDs(ids) {
                 do {
@@ -259,6 +271,16 @@ speciesImport.then(data => {
                 this.startQuiz()
                 this.mistakeIndexes = [];
             },
+            resetAll() {
+                this.reset();
+            },
+            reset10() {
+                this.isEndOfGame = false;
+                this.gameType = '10';
+                this.puzzleItems = this.getThisNumberOfRandomSpecies(10);
+                this.startQuiz()
+                this.mistakeIndexes = [];
+            },
             restartWithMistakes() {
                 this.isEndOfGame = false;
                 this.gameType = 'mistakesOnly';
@@ -279,16 +301,13 @@ speciesImport.then(data => {
             },
             continueAfterAnswer() {
 
-                if (this.continueTimeoutHandle != null) {
-                    clearTimeout(this.continueTimeoutHandle);
-                }
+                //if (this.continueTimeoutHandle != null) {
+                //    clearTimeout(this.continueTimeoutHandle);
+                //}
 
                 if (this.previousPuzzleIDs.length == this.totalPuzzleItemsCount) {
                     if (!this.isEndOfGame) {
                         this.endGame();
-                    }
-                    else {
-                        this.reset();
                     }
                 }
                 else {
