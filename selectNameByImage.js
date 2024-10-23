@@ -41,12 +41,7 @@ speciesImport.then(data => {
         },
         computed: {
             nextButtonText() {
-                if (this.numberOfAnsweredQuestions >= this.totalPuzzleItemsCount) {
-                    return "Újrakezdés";
-                }
-                else {
-                    return "Tovább (" + this.timeoutSeconds + ")";
-                }
+                return "Tovább (" + this.timeoutSeconds + ")";
             },
             totalSpeciesCount() {
                 return this.speciesList.length;
@@ -112,7 +107,8 @@ speciesImport.then(data => {
                     }
                 }
                 return temp;
-            }
+            },
+
         },
         methods: {
             getRandomSpecies() {
