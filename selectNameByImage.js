@@ -304,9 +304,10 @@ speciesImport.then(data => {
             },
             continueAfterAnswer() {
 
-                //if (this.continueTimeoutHandle != null) {
-                //    clearTimeout(this.continueTimeoutHandle);
-                //}
+                if (this.continueTimeoutHandle != null) {
+                    // Stop the timeout for auto-forwarding to the next question
+                    clearTimeout(this.continueTimeoutHandle);
+                }
 
                 if (this.previousPuzzleIDs.length == this.totalPuzzleItemsCount) {
                     if (!this.isEndOfGame) {
