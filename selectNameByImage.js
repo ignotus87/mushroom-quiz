@@ -293,7 +293,7 @@ speciesImport.then(data => {
             },
             endGame() {
                 this.isEndOfGame = true;
-                this.comment = "Vége a játéknak! Eredmény: " + Math.floor(this.totalPoints / this.numberOfAnsweredQuestions * 100) + '%';
+                this.comment += "<br/>Vége a játéknak! Eredmény: " + Math.floor(this.totalPoints / this.numberOfAnsweredQuestions * 100) + '%';
             },
             randomizeChoices() {
                 this.choices = this.shuffle([this.puzzleName, this.incorrect1.Name, this.incorrect2.Name, this.incorrect3.Name]);
