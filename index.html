@@ -71,6 +71,7 @@
             text-align: center;
             font-size: 2em;
             background-color: white;
+            z-index: 999;
         }
 
         .game-title {
@@ -98,8 +99,53 @@
         .wrong-selected {
             background-color: red;
         }
+
+        .carousel-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .carousel {
+            width: 90vw;
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            /* use this property to hide the scrollbar on firefox */
+            scrollbar-width: none;
+        }
+
+        /*  use this pseudo class to hide the scrollbar on chrome */
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .item {
+            flex-basis: 100%;
+            flex-shrink: 0;
+            padding: 1rem;
+        }
+
+        .left,
+        .right {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: brown;
+            font-size: 5rem;
+            overflow: hidden;
+            z-index: 100;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+
         /* Container holding the image and the text */
         .puzzle-image-container {
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
             position: relative;
             text-align: center;
             color: black;
@@ -107,7 +153,7 @@
 
         .puzzle-image {
             max-width: 100%;
-            max-height: 600px;
+            max-height: 500px;
         }
 
         /* Centered text */
@@ -207,6 +253,26 @@
 			background-color: #0d6efd;
 			border-color: #0d6efd;
 		}
+
+        .navigation-button {
+            text-align: center;
+            position: relative;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
     </style>
 </head>
 
@@ -226,8 +292,9 @@
         <div class="puzzle-container">
             <p class="game-title">{{ gameTitle }}</p>
             <div :class="{ 'show': !isEndOfGame, 'hide': isEndOfGame }">{{ actualIndex }}/{{ totalPuzzleItemsCount }}</div>
+
             <div class="puzzle-image-container">
-                <img class="puzzle-image" v-bind:src="puzzleImage" :class="{ 'overlay': isAnswered }" alt="Mi ez a gomba?" />
+
                 <div class="puzzle-image-text comment-on-answer">
                     <span v-html="commentToShow"></span>
                     <div>
@@ -236,8 +303,29 @@
                         <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">Új játék (összes faj)</button>
                     </div>
                 </div>
-                <i><small><br />Forrás: <u class="link" @click="openImageSource()">{{ imageSource }}</u></small></i>
+
+                <div class="carousel-wrapper">
+
+                    <button class="left" @click="slideImageLeft()" :class="{ 'show': hasMoreImagesLeft, 'hide': !hasMoreImagesLeft }">&lt;</button>
+
+                    <div class="carousel">
+                        <div class="item" v-for="(puzzleImage, index) in puzzleImagesAll">
+                            <img class="puzzle-image" v-bind:src="puzzleImage" :class="{ 'overlay': isAnswered }" alt="Mi ez a gomba?" />
+                            <i><small><br />Forrás: <u class="link" @click="openImageSource()">{{ imageSource }}</u></small></i>
+                        </div>
+                    </div>
+
+                    <button class="right" @click="slideImageRight()">&gt;</button>
+
+                </div>
+
+                <div class="navigation">
+                    <span v-for="(puzzleImage, index) in puzzleImagesAll" class="dot" :class="{ 'active': imageIndex === index }" @click="changeSlide(index)"></span>
+                </div>
+
+
             </div>
+            
 
             <div class="choice-container" :class="{ 'show': !isEndOfGame, 'hide': isEndOfGame }">
                 <div class="choice">

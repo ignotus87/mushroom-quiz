@@ -53,7 +53,12 @@ speciesImport.then(data => {
                 return this.puzzle.Name;
             },
             puzzleImage() {
-                return "./SpeciesImages/" + this.puzzle.ID + (this.imageIndex === 0 ? "" : "_" + (this.imageIndex + 1).toString()) + ".jpg";
+                return this.getPuzzleImageByIndex(this.imageIndex);
+            },
+            puzzleImagesAll() {
+                return this.puzzle.ImageSource.map((_, index) => {
+                    return this.getPuzzleImageByIndex(index);
+                });
             },
             commentToShow() {
                 return this.comment;
@@ -108,9 +113,67 @@ speciesImport.then(data => {
                 }
                 return temp;
             },
-
+            hasMoreImagesLeft() {
+                return this.imageIndex > 0;
+            },
+            hasMoreImagesRight() {
+                return this.imageIndex < this.puzzle.ImageSource.length - 1;
+            }
         },
         methods: {
+            getPuzzleImageByIndex(theIndex) {
+                return "./SpeciesImages/" + this.puzzle.ID + (theIndex === 0 ? "" : "_" + (theIndex + 1).toString()) + ".jpg";
+            },
+            slideImageLeft() {
+                if (!this.hasMoreImagesLeft) {
+                    return;
+                }
+
+                var carousel = document.querySelector('.carousel');
+                var item = document.querySelector('.item');
+
+                carousel.scrollLeft -= item.clientWidth;
+                this.imageIndex--;
+            },
+            slideImageRight() {
+                if (!this.hasMoreImagesRight) {
+                    return;
+                }
+
+                var carousel = document.querySelector('.carousel');
+                var item = document.querySelector('.item');
+
+                carousel.scrollLeft += item.clientWidth;
+                this.imageIndex++;
+            },
+            changeSlide(n) {
+                console.log('change slide to ' + n);
+
+                var carousel = document.querySelector('.carousel');
+                var item = document.querySelector('.item');
+
+                carousel.scrollLeft = n * item.clientWidth;
+
+                this.imageIndex = n;
+
+                //var imgs = document.querySelectorAll('.slider img');
+                var dots = document.querySelectorAll('.dot');
+                //var currentImg = n; // index of the first image 
+                //const interval = 3000; // duration(speed) of the slide
+
+                var currentImg = this.imageIndex;
+
+                //for (var i = 0; i < imgs.length; i++) { // reset
+                //    imgs[i].style.opacity = 0;
+                //    dots[i].className = dots[i].className.replace(' active', '');
+                //}
+
+                /*currentImg = n;*/
+
+                //imgs[currentImg].style.opacity = 1;
+                //imgs[currentImg].className += ' puzzle-image-active';
+                //dots[currentImg].className += ' active';
+            },
             getRandomSpecies() {
                 if (this.previousPuzzleIDs.length == this.puzzleItems.length) { return this.puzzle; }
 
@@ -168,7 +231,6 @@ speciesImport.then(data => {
                 else {
                     this.incorrect3 = this.getRandomSpeciesFromAllItemsExceptIDs([this.puzzle.ID, this.incorrect1.ID, this.incorrect2.ID]);
                 }
-
             },
             shuffle(array) {
                 let currentIndex = array.length, randomIndex;
@@ -246,6 +308,7 @@ speciesImport.then(data => {
                 this.randomizeChoices();
                 this.resetChoiceColors();
                 this.actualIndex++;
+                this.changeSlide(this.imageIndex);
                 this.isAnswered = false;
                 this.isWrongAnswer = false;
             },
