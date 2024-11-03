@@ -232,5 +232,19 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": ""
+  },
+  {
+    "ID": 19,
+    "Name": "ízletes csiperke",
+    "Category": "Agaricus bitorquis",
+    "EdibilityCategory": "edible",
+    "IsSellable": true,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/%C3%8Dzletes_csiperke#/media/F%C3%A1jl:Agaricus_bitorquis_01.JPG",
+      "https://hu.wikipedia.org/wiki/%C3%8Dzletes_csiperke#/media/F%C3%A1jl:Agaricus.bitorquis.nathan.jpg"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "kettős élű gallér, keskeny lemezek a húshoz képest"
   }
 ]
