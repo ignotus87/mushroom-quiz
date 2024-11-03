@@ -246,5 +246,20 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "kettős élű gallér, keskeny lemezek a húshoz képest"
+  },
+  {
+    "ID": 20,
+    "Name": "karbolszagú csiperke",
+    "Category": "Agaricus xanthodermus",
+    "EdibilityCategory": "poisonous",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Karbolszag%C3%BA_csiperke#/media/F%C3%A1jl:2010-11-13_Agaricus_xanthodermus_Genev_120348.jpg",
+      "https://hu.wikipedia.org/wiki/Karbolszag%C3%BA_csiperke#/media/F%C3%A1jl:Agaricus_xanthoderma_eF.jpg",
+      "https://hu.wikipedia.org/wiki/Karbolszag%C3%BA_csiperke#/media/F%C3%A1jl:Agaricus_xanthodermus_section.jpg"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "gyakori, hányást, hasmenést okoz"
   }
 ]
