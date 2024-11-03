@@ -217,5 +217,20 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": ""
+  },
+  {
+    "ID": 18,
+    "Name": "erdei csiperke",
+    "Category": "Agaricus silvaticus",
+    "EdibilityCategory": "edible",
+    "IsSellable": true,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Erdei_csiperke#/media/F%C3%A1jl:Agaricus_silvaticus_Hargita.JPG",
+      "https://hu.wikipedia.org/wiki/Erdei_csiperke#/media/F%C3%A1jl:Kleiner_Waldchampignon_Agaricus_silvaticus.jpg",
+      "https://hu.wikipedia.org/wiki/Erdei_csiperke#/media/F%C3%A1jl:Agaricus_sylvaticus_170926w.JPG"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": ""
   }
 ]
