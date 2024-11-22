@@ -261,5 +261,21 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "gyakori, hányást, hasmenést okoz"
+  },
+  {
+    "ID": 21,
+    "Name": "sárgapelyhű csigagomba",
+    "Category": "Hygrophorus chrysodon",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/S%C3%A1rgapelyh%C5%B1_csigagomba#/media/F%C3%A1jl:Hygrophorus_chrysodon_(Batsch)_Fr_680260.jpg",
+      "https://hu.wikipedia.org/wiki/S%C3%A1rgapelyh%C5%B1_csigagomba#/media/F%C3%A1jl:Hygrophorus_chrysodon,_Eureka.jpg",
+      "https://hu.wikipedia.org/wiki/S%C3%A1rgapelyh%C5%B1_csigagomba#/media/F%C3%A1jl:Hygrophorus_chrysodon,_Turkey_Point_2.jpg",
+      "https://hu.wikipedia.org/wiki/S%C3%A1rgapelyh%C5%B1_csigagomba#/media/F%C3%A1jl:Hygrophorus_chrysodon,_Caspar.jpg"
+    ],
+    "SimilarSpecies": [ 15 ],
+    "DistinctionInfo": "A hasonló elefántcsont-csigagomba teljesen fehér."
   }
 ]
