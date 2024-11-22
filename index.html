@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang=en>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QETEXVVSYM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QETEXVVSYM');
+    </script>
+
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -115,10 +125,10 @@
             scrollbar-width: none;
         }
 
-        /*  use this pseudo class to hide the scrollbar on chrome */
-        .carousel::-webkit-scrollbar {
-            display: none;
-        }
+            /*  use this pseudo class to hide the scrollbar on chrome */
+            .carousel::-webkit-scrollbar {
+                display: none;
+            }
 
         .item {
             flex-basis: 100%;
@@ -136,7 +146,7 @@
             overflow: hidden;
             z-index: 100;
         }
-        
+
         img {
             max-width: 100%;
         }
@@ -214,12 +224,12 @@
             justify-content: center;
         }
 
-        .choice-container .choice {
-        }
+            .choice-container .choice {
+            }
 
         .choice {
             max-width: 95%;
-			margin: 5px;
+            margin: 5px;
         }
 
         @media (min-width: 768px) {
@@ -228,31 +238,33 @@
                 grid-template-columns: 1fr 1fr;
             }
         }
-		
-		.right-wrong-image {
+
+        .right-wrong-image {
             width: 30px;
         }
-		.bootstrap-button {
-			cursor: pointer;
-			outline: 0;
-			display: inline-block;
-			font-weight: 400;
-			line-height: 1.5;
-			text-align: center;
-			background-color: white;
-			border: 1px solid transparent;
-			padding: 6px 12px;
-			font-size: 1rem;
-			border-radius: .25rem;
-			transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-			color: #0d6efd;
-			border-color: #0d6efd;
-		}
-		.bootstrap-button:hover {
-			color: #fff;
-			background-color: #0d6efd;
-			border-color: #0d6efd;
-		}
+
+        .bootstrap-button {
+            cursor: pointer;
+            outline: 0;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            background-color: white;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 1rem;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+            .bootstrap-button:hover {
+                color: #fff;
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+            }
 
         .navigation-button {
             text-align: center;
@@ -269,10 +281,10 @@
             display: inline-block;
         }
 
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
+            .active,
+            .dot:hover {
+                background-color: #717171;
+            }
     </style>
 </head>
 
