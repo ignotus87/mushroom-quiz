@@ -277,5 +277,72 @@
     ],
     "SimilarSpecies": [ 15 ],
     "DistinctionInfo": "A hasonló elefántcsont-csigagomba teljesen fehér."
+  },
+  {
+    "ID": 22,
+    "Name": "téli fülőke",
+    "Category": "Flammulina velutipes",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/T%C3%A9li_f%C3%BCl%C5%91ke#/media/F%C3%A1jl:Flammulina_velutipes20041024.JPG",
+      "https://hu.wikipedia.org/wiki/T%C3%A9li_f%C3%BCl%C5%91ke#/media/F%C3%A1jl:Flammulina_velutipes.JPG",
+      "https://hu.wikipedia.org/wiki/T%C3%A9li_f%C3%BCl%C5%91ke#/media/F%C3%A1jl:T%C3%A9li_f%C3%BCl%C5%91ke.JPG",
+      "https://www.tiszatoelovilaga.hu/teli-fuloke/",
+      "https://www.tiszatoelovilaga.hu/teli-fuloke/",
+      "https://www.tiszatoelovilaga.hu/teli-fuloke/"
+    ],
+    "SimilarSpecies": [ 23, 24, 25 ],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 23,
+    "Name": "sárga kénvirággomba",
+    "Category": "Hypoloma fasciculare",
+    "EdibilityCategory": "poisonous",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/S%C3%A1rga_k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:Hypholoma_fasciculare_LC0091.jpg",
+      "https://www.gombacsoda.hu/gombak/s%C3%A1rga_k%C3%A9nvir%C3%A1ggomba",
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=292"
+    ],
+    "SimilarSpecies": [ 22, 24, 25 ],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 24,
+    "Name": "vöröses kénvirággomba",
+    "Category": "Hypoloma latertium",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/V%C3%B6r%C3%B6ses_k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:2012-10-05_Hypholoma_lateritium_(Schaeffer)_P._Kummer_269177.jpg",
+      "https://hu.wikipedia.org/wiki/V%C3%B6r%C3%B6ses_k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:2009-11-14_Hypholoma_lateritium_(Schaeff.)_Qu%C3%A9l_65279.jpg",
+      "https://hu.wikipedia.org/wiki/V%C3%B6r%C3%B6ses_k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:Hypholoma_lateritium_in_the_Spandauer_Forst_02.jpg",
+      "https://hu.wikipedia.org/wiki/V%C3%B6r%C3%B6ses_k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:20071004_hypholoma_lateritium.jpg",
+      "https://hu.wikipedia.org/wiki/V%C3%B6r%C3%B6ses_k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:Hypholoma.sublateritium2.-.lindsey.jpg"
+    ],
+    "SimilarSpecies": [ 22, 23, 25 ],
+    "DistinctionInfo": ""
+  },
+  {
+    "ID": 25,
+    "Name": "fenyő-kénvirággomba",
+    "Category": "Hypoloma capnoides",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Feny%C5%91-k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:2008-12-08_Hypholoma_capnoides_(Fr.)_P._Kumm_31447_crop.jpg",
+      "https://hu.wikipedia.org/wiki/Feny%C5%91-k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:Hypholoma_spec._-_Lindsey_1.jpg",
+      "https://hu.wikipedia.org/wiki/Feny%C5%91-k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:Hypholoma_capnoides_2.jpg",
+      "https://hu.wikipedia.org/wiki/Feny%C5%91-k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:Hypholoma_capnoides_B1.jpg",
+      "https://hu.wikipedia.org/wiki/Feny%C5%91-k%C3%A9nvir%C3%A1ggomba#/media/F%C3%A1jl:Hypholoma_capnoides.jpg"
+    ],
+    "SimilarSpecies": [ 22, 23, 24 ],
+    "DistinctionInfo": ""
   }
 ]
