@@ -344,5 +344,35 @@
     ],
     "SimilarSpecies": [ 22, 23, 24 ],
     "DistinctionInfo": ""
+  },
+  {
+    "ID": 26,
+    "Name": "arany tinóru",
+    "Category": "Xerocomellus chrysenteron",
+    "EdibilityCategory": "edible",
+    "IsSellable": true,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Arany_tin%C3%B3ru#/media/F%C3%A1jl:Xerocomellus_chrysenteron_LC0072.jpg",
+      "https://www.terra.hu/gomba/html/xerocomus_chrysenteron.html",
+      "https://www.gombacsoda.hu/gombak/arany_tin%C3%B3ru"
+    ],
+    "SimilarSpecies": [ 27 ],
+    "DistinctionInfo": "Összetéveszthető az ehető rozsdabarna tinóruval, és hasonlít hozzá még az ehető piros tinóru és a mérgező farkastinóru."
+  },
+  {
+    "ID": 27,
+    "Name": "rozsdabarna tinóru",
+    "Category": "Xerocomus subtomentosus var. ferruginosus",
+    "EdibilityCategory": "edible",
+    "IsSellable": true,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://brainmanpictures.piwigo.com/picture?/18338",
+      "http://miskolcigombasz.hu/fajlista/index.php?action=showKind&langOrder=hu&caller=kindList&kindId=689",
+      "http://miskolcigombasz.hu/fajlista/index.php?action=showKind&langOrder=hu&caller=kindList&kindId=689"
+    ],
+    "SimilarSpecies": [ 26 ],
+    "DistinctionInfo": "Régen: recéstönkű nemezestinóru. A nemezestinóruk egymástól való elkülönítése nehéz, sok átmeneti alak ismert, mikroszkópos bélyegekben is sokszor átfednek. Jellemző bélyegei: nem repedező kalap, kalapbőr alatt rózsaszínes hús, fehéressárga hús. Összetéveszthető a világosabb kalapú, sárga húsú Xerocomus subtomentosus fajjal, melynek kalapbőre alatt a hús nem rózsaszínes."
   }
 ]
