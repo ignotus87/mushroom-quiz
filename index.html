@@ -318,7 +318,7 @@
                     <div>
                         <button class="bootstrap-button next-button " :class="{ 'show': isAnswered && !isEndOfGame, 'hide': !isAnswered  || isEndOfGame }" @click="continueAfterAnswer()">{{ nextButtonText }}</button>
                         <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="reset10()">Új játék (10 kérdés)</button>
-                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">Új játék (összes faj)</button>
+                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">Új játék (összes faj [{{ totalSpeciesCount }}])</button>
                     </div>
                 </div>
 
