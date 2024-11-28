@@ -5,8 +5,12 @@
     "Category": "Amanita phalloides",
     "EdibilityCategory": "poisonous",
     "IsProtected": false,
-    "ImageSource": [ "https://www.facebook.com/gyilkosgomba/" ],
-    "SimilarSpecies": [ 5, 29, 30, 31 ],
+    "ImageSource": [
+      "https://www.facebook.com/gyilkosgomba/",
+      "https://hu.wikipedia.org/wiki/Gyilkos_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_phalloides_young_specimen.jpg",
+      "https://hu.wikipedia.org/wiki/Gyilkos_gal%C3%B3ca#/media/F%C3%A1jl:2011-10-26_Amanita_phalloides_(Fr.)_Link_177883.jpg"
+    ],
+    "SimilarSpecies": [ 5, 29, 30, 31, 32, 33, 34 ],
     "DistinctionInfo": ""
   },
   {
@@ -421,7 +425,7 @@
       "https://hu.wikipedia.org/wiki/Erd%C5%91sz%C3%A9li_csiperke#/media/F%C3%A1jl:2008-08-Agaricus-Stuttgart.JPG",
       "https://hu.wikipedia.org/wiki/Erd%C5%91sz%C3%A9li_csiperke#/media/F%C3%A1jl:2012-10-09_Agaricus_arvensis_Schaeff_270481.jpg"
     ],
-    "SimilarSpecies": [ 1, 29 ],
+    "SimilarSpecies": [ 1, 29, 31, 32, 33 ],
     "DistinctionInfo": "",
     "Todo": "Hasonlók még: karbolszagú csiperke, mezei csiperke, gumós csiperke"
   },
@@ -437,8 +441,59 @@
       "https://hu.wikipedia.org/wiki/Citromgal%C3%B3ca#/media/F%C3%A1jl:2006-08-09_Amanita_citrina_46465_cropped.jpg",
       "https://hu.wikipedia.org/wiki/Citromgal%C3%B3ca#/media/F%C3%A1jl:Amanita_citrina_-_false_deathcap.JPG"
     ],
-    "SimilarSpecies": [ 1, 29, 30 ],
+    "SimilarSpecies": [ 1, 29, 30, 32, 33 ],
     "DistinctionInfo": "",
-    "Todo": "Hasonló fajok még: akácpereszke, gumós csiperke"
+    "Todo": ""
+  },
+  {
+    "ID": 32,
+    "Name": "akácpereszke",
+    "Category": "Cercopemyces rickenii",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=51",
+      "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=51",
+      "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=51",
+      "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=51"
+    ],
+    "SimilarSpecies": [ 1, 29, 30, 31, 33 ],
+    "DistinctionInfo": "Régen: akác pikkelyespereszke, armillaria rickenii, floccularia rickenii",
+    "Todo": ""
+  },
+  {
+    "ID": 33,
+    "Name": "gumós csiperke",
+    "Category": "Agaricus essettei",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Gum%C3%B3s_csiperke#/media/F%C3%A1jl:Agaricus_essettei_170926w.JPG",
+      "https://hu.wikipedia.org/wiki/Gum%C3%B3s_csiperke#/media/F%C3%A1jl:Agaricus_abruptibulbus_07.jpg",
+      "https://hu.wikipedia.org/wiki/Gum%C3%B3s_csiperke#/media/F%C3%A1jl:Agaricus_abruptibulbus_10.jpg",
+      "https://hu.wikipedia.org/wiki/Gum%C3%B3s_csiperke#/media/F%C3%A1jl:Agaricus_abruptibulbus_12.jpg",
+      "https://hu.wikipedia.org/wiki/Gum%C3%B3s_csiperke#/media/F%C3%A1jl:Agaricus_abruptibulbus.jpg"
+    ],
+    "SimilarSpecies": [ 1, 29, 30, 31 ],
+    "DistinctionInfo": "",
+    "Todo": ""
+  },
+  {
+    "ID": 34,
+    "Name": "dióízű galambgomba",
+    "Category": "Russula heterophylla",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Di%C3%B3%C3%ADz%C5%B1_galambgomba#/media/F%C3%A1jl:Russula_heterophylla_060820w.jpg",
+      "https://hu.wikipedia.org/wiki/Di%C3%B3%C3%ADz%C5%B1_galambgomba#/media/F%C3%A1jl:Russula_heterophylla_a1.JPG",
+      "https://hu.wikipedia.org/wiki/Di%C3%B3%C3%ADz%C5%B1_galambgomba#/media/F%C3%A1jl:Russula_heterophylla_a3_(1).JPG"
+    ],
+    "SimilarSpecies": [ 1, 29, 30, 31 ],
+    "DistinctionInfo": "Syn: simahátú galambgomba",
+    "Todo": ""
   }
 ]
