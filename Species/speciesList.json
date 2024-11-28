@@ -374,5 +374,22 @@
     ],
     "SimilarSpecies": [ 26 ],
     "DistinctionInfo": "Régen: recéstönkű nemezestinóru. A nemezestinóruk egymástól való elkülönítése nehéz, sok átmeneti alak ismert, mikroszkópos bélyegekben is sokszor átfednek. Jellemző bélyegei: nem repedező kalap, kalapbőr alatt rózsaszínes hús, fehéressárga hús. Összetéveszthető a világosabb kalapú, sárga húsú Xerocomus subtomentosus fajjal, melynek kalapbőre alatt a hús nem rózsaszínes."
+  },
+  {
+    "ID": 28,
+    "Name": "narancssárga laskagomba",
+    "Category": "Phyllotopsis nidulans",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_laskagomba#/media/F%C3%A1jl:2011-11-05_Phyllotopsis_nidulans_(Pers.)_Singer_200810.jpg",
+      "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_laskagomba#/media/F%C3%A1jl:2008-11-23_Phyllotopsis_nidulans_(Pers.)_Singer_30041.jpg",
+      "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_laskagomba#/media/F%C3%A1jl:2012-10-11_Phyllotopsis_nidulans_(Pers.)_Singer_274836.jpg",
+      "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_laskagomba#/media/F%C3%A1jl:Still_present_at_8_November_these_Phyllotopsis_nidulans_(Orange_Mock_Oyster_or_Orange_Oyster,_D=_Orangeseitling,_F=_Pleurote_en_nid,_Syn._Pleurote_nid_d'oiseau,_NL=_Oranje_oesterzwam)_pink_spores_and_unknown_wooddecayi_-_panoramio.jpg",
+      "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_laskagomba#/media/F%C3%A1jl:Phyllotopsis_nidulans_G5_(3).JPG"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Régen: nemezes narancsoslaska"
   }
 ]
