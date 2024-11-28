@@ -21,7 +21,10 @@
     "IsProtected": false,
     "ImageSource": [ "https://hu.wikipedia.org/wiki/B%C3%BCd%C3%B6s_galambgomba" ],
     "SimilarSpecies": [],
-    "DistinctionInfo": ""
+    "DistinctionInfo": "Könnyen felismerhető, más gombafajjal nem téveszthető össze.",
+    "Sources": [
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=568"
+    ]
   },
   {
     "ID": 3,
@@ -30,8 +33,9 @@
     "EdibilityCategory": "edible",
     "IsProtected": false,
     "ImageSource": [ "https://hu.wikipedia.org/wiki/Nagy_%C5%91zl%C3%A1bgomba" ],
-    "SimilarSpecies": [],
-    "DistinctionInfo": ""
+    "SimilarSpecies": [ 35 ],
+    "DistinctionInfo": "",
+    "Todo": "Hasonlóak még: csipkés őzlábgomba, párducgalóca, más őzlágbombák, piruló őzlábgomba, tüskés őzlábgomba"
   },
   {
     "ID": 4,
@@ -495,5 +499,22 @@
     "SimilarSpecies": [ 1, 29, 30, 31 ],
     "DistinctionInfo": "Syn: simahátú galambgomba",
     "Todo": ""
+  },
+  {
+    "ID": 35,
+    "Name": "karcsú őzlábgomba",
+    "Category": "Macrolepiota mastoidea",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Karcs%C3%BA_%C5%91zl%C3%A1bgomba#/media/F%C3%A1jl:Zitzen-Riesenschirmling_Macrolepiota_mastoidea.JPG",
+      "https://hu.wikipedia.org/wiki/Karcs%C3%BA_%C5%91zl%C3%A1bgomba#/media/F%C3%A1jl:2009-02-01_Macrolepiota_mastoidea_(Fr.)_Singer_35418.jpg",
+      "https://hu.wikipedia.org/wiki/Karcs%C3%BA_%C5%91zl%C3%A1bgomba#/media/F%C3%A1jl:Macrolepiota_mastoidea_170926w.JPG",
+      "https://hu.wikipedia.org/wiki/Karcs%C3%BA_%C5%91zl%C3%A1bgomba#/media/F%C3%A1jl:Macrolepiota_mastoidea_P25.1.jpg"
+    ],
+    "SimilarSpecies": [ 3 ],
+    "DistinctionInfo": "",
+    "Todo": "Hasonló még: húsbarnás őzlábgomba, büdös őzlábgomba, piruló őzlábgomba"
   }
 ]
