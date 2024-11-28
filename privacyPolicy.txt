@@ -1,0 +1,18 @@
+# Adatvédelmi szabályzat
+
+A Gombakvíz! komolyan veszi az Ön adatvédelmét. Az Ön adatainak jobb védelme érdekében a Gombakvíz! a jelen adatvédelmi nyilatkozatban ismerteti, hogyan gyűjtjük és használjuk fel az Ön személyes adatait.
+
+
+## Rutin információk gyűjtése
+
+Ez a weboldal alapvető információkat követ látogatók. Ezek az információk többek között tartalmazzák az IP-címeket, böngésző adatait, időbélyegeket és hivatkozó oldalakat. Ezen információk egyike sem képes személyesen azonosítani az adott látogatók ezen weboldal konkrét látogatóit. Az információk nyomon követése rutinszerű adminisztrációs és karbantartási célokból történik.
+
+
+## Sütik
+
+Szükség esetén ez a weboldal cookie-kat használ, hogy információkat tároljon a látogató preferenciáiról és előzményeiről annak érdekében, hogy jobban kiszolgálja a látogatót és/vagy személyre szabott tartalmat nyújtson a látogató számára.
+
+
+## Hirdetések és egyéb harmadik felek
+
+A hirdetési partnerek és más harmadik felek sütiket, szkripteket és/vagy webjelzőket használhatnak a látogató ezen a weboldal tevékenységének nyomon követésére, hogy hirdetéseket és más hasznos információkat jelenítsenek meg. Az ilyen nyomon követést közvetlenül a harmadik felek végzik saját szervereiken keresztül, és azokra saját adatvédelmi irányelveik vonatkoznak. Ez a weboldal nem fér hozzá ezekhez a cookie-khoz, szkriptekhez és/vagy webjelzőkhöz, amelyeket harmadik felek használhatnak, és nincs ráhatása. Tudja meg, hogyan [opt o
