@@ -6,7 +6,7 @@
     "EdibilityCategory": "poisonous",
     "IsProtected": false,
     "ImageSource": [ "https://www.facebook.com/gyilkosgomba/" ],
-    "SimilarSpecies": [],
+    "SimilarSpecies": [ 8, 29 ],
     "DistinctionInfo": ""
   },
   {
@@ -391,5 +391,22 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "Régen: nemezes narancsoslaska"
+  },
+  {
+    "ID": 29,
+    "Name": "fehér galóca",
+    "Category": "Amanita verna",
+    "EdibilityCategory": "poisonous",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https",
+      "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna-01.jpg",
+      "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna-02.jpg",
+      "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna.jpg",
+      "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna_(destroying_angel_mushroom).jpg"
+    ],
+    "SimilarSpecies": [ 1 ],
+    "DistinctionInfo": ""
   }
 ]
