@@ -6,7 +6,7 @@
     "EdibilityCategory": "poisonous",
     "IsProtected": false,
     "ImageSource": [ "https://www.facebook.com/gyilkosgomba/" ],
-    "SimilarSpecies": [ 8, 29 ],
+    "SimilarSpecies": [ 5, 29, 30, 31 ],
     "DistinctionInfo": ""
   },
   {
@@ -400,13 +400,45 @@
     "IsSellable": false,
     "IsProtected": false,
     "ImageSource": [
-      "https",
       "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna-01.jpg",
       "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna-02.jpg",
       "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna.jpg",
       "https://hu.wikipedia.org/wiki/Feh%C3%A9r_gal%C3%B3ca#/media/F%C3%A1jl:Amanita_verna_(destroying_angel_mushroom).jpg"
     ],
-    "SimilarSpecies": [ 1 ],
+    "SimilarSpecies": [ 1, 30, 5 ],
     "DistinctionInfo": ""
+  },
+  {
+    "ID": 30,
+    "Name": "erdőszéli csiperke",
+    "Category": "Agaricus arvensis",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Erd%C5%91sz%C3%A9li_csiperke#/media/F%C3%A1jl:Agaricus_arvensis_1292544.jpg",
+      "https://hu.wikipedia.org/wiki/Erd%C5%91sz%C3%A9li_csiperke#/media/F%C3%A1jl:2008-08-Agaricus-Stuttgartx7.JPG",
+      "https://hu.wikipedia.org/wiki/Erd%C5%91sz%C3%A9li_csiperke#/media/F%C3%A1jl:2008-08-Agaricus-Stuttgart.JPG",
+      "https://hu.wikipedia.org/wiki/Erd%C5%91sz%C3%A9li_csiperke#/media/F%C3%A1jl:2012-10-09_Agaricus_arvensis_Schaeff_270481.jpg"
+    ],
+    "SimilarSpecies": [ 1, 29 ],
+    "DistinctionInfo": "",
+    "Todo": "Hasonlók még: karbolszagú csiperke, mezei csiperke, gumós csiperke"
+  },
+  {
+    "ID": 31,
+    "Name": "citromgalóca",
+    "Category": "Amanita citrina",
+    "EdibilityCategory": "poisonous",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Citromgal%C3%B3ca#/media/F%C3%A1jl:Amanita_citrina_fungus_in_Bignell_Wood,_New_Forest_-_geograph.org.uk_-_260930.jpg",
+      "https://hu.wikipedia.org/wiki/Citromgal%C3%B3ca#/media/F%C3%A1jl:2006-08-09_Amanita_citrina_46465_cropped.jpg",
+      "https://hu.wikipedia.org/wiki/Citromgal%C3%B3ca#/media/F%C3%A1jl:Amanita_citrina_-_false_deathcap.JPG"
+    ],
+    "SimilarSpecies": [ 1, 29, 30 ],
+    "DistinctionInfo": "",
+    "Todo": "Hasonló fajok még: akácpereszke, gumós csiperke"
   }
 ]
