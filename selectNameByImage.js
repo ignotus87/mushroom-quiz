@@ -360,6 +360,7 @@ speciesImport.then(data => {
                 this.comment = '';
                 this.isAnswered = false;
                 this.isWrongAnswer = false;
+                this.gameResultComment = '';
             },
             startQuiz() {
                 this.previousPuzzleIDs = [];
@@ -374,6 +375,8 @@ speciesImport.then(data => {
                 this.comment = '';
                 this.isAnswered = false;
                 this.isWrongAnswer = false;
+                this.isEndOfGame = false;
+                this.gameResultComment = '';
             },
             reset() {
                 this.isEndOfGame = false;
@@ -381,6 +384,7 @@ speciesImport.then(data => {
                 this.puzzleItems = this.speciesList;
                 this.startQuiz()
                 this.mistakeIndexes = [];
+                this.gameResultComment = '';
             },
             resetAll() {
                 this.reset();
@@ -391,6 +395,7 @@ speciesImport.then(data => {
                 this.puzzleItems = this.getThisNumberOfRandomSpecies(10);
                 this.startQuiz()
                 this.mistakeIndexes = [];
+                this.gameResultComment = '';
             },
             restartWithMistakes() {
                 this.isEndOfGame = false;
@@ -398,6 +403,7 @@ speciesImport.then(data => {
                 this.puzzleItems = this.speciesList.filter((item) => this.mistakeIndexes.includes(item.ID));
                 this.startQuiz()
                 this.mistakeIndexes = [];
+                this.gameResultComment = '';
             },
             endGame() {
                 this.isEndOfGame = true;
