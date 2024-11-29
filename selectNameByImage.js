@@ -175,24 +175,8 @@ speciesImport.then(data => {
                 carousel.scrollLeft = n * item.clientWidth;
 
                 this.imageIndex = n;
-
-                //var imgs = document.querySelectorAll('.slider img');
                 var dots = document.querySelectorAll('.dot');
-                //var currentImg = n; // index of the first image 
-                //const interval = 3000; // duration(speed) of the slide
-
                 var currentImg = this.imageIndex;
-
-                //for (var i = 0; i < imgs.length; i++) { // reset
-                //    imgs[i].style.opacity = 0;
-                //    dots[i].className = dots[i].className.replace(' active', '');
-                //}
-
-                /*currentImg = n;*/
-
-                //imgs[currentImg].style.opacity = 1;
-                //imgs[currentImg].className += ' puzzle-image-active';
-                //dots[currentImg].className += ' active';
             },
             getRandomSpecies() {
                 if (this.previousPuzzleIDs.length == this.puzzleItems.length) { return this.puzzle; }
