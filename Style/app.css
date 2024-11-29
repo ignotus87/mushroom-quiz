@@ -321,3 +321,7 @@ fieldset {
 .scientific-name {
     font-size: 14px;
 }
+
+#visitor-counter {
+    font-size: 10px;
+}
