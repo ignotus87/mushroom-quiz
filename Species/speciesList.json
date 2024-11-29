@@ -381,7 +381,8 @@
       "http://miskolcigombasz.hu/fajlista/index.php?action=showKind&langOrder=hu&caller=kindList&kindId=689"
     ],
     "SimilarSpecies": [ 26 ],
-    "DistinctionInfo": "Régen: recéstönkű nemezestinóru. A nemezestinóruk egymástól való elkülönítése nehéz, sok átmeneti alak ismert, mikroszkópos bélyegekben is sokszor átfednek. Jellemző bélyegei: nem repedező kalap, kalapbőr alatt rózsaszínes hús, fehéressárga hús. Összetéveszthető a világosabb kalapú, sárga húsú Xerocomus subtomentosus fajjal, melynek kalapbőre alatt a hús nem rózsaszínes."
+    "DistinctionInfo": "Régen: recéstönkű nemezestinóru. Jellemző bélyegei: nem repedező kalap, kalapbőr alatt rózsaszínes hús, fehéressárga hús.",
+    "Todo": "Összetéveszthető a világosabb kalapú, sárga húsú Xerocomus subtomentosus fajjal, melynek kalapbőre alatt a hús nem rózsaszínes."
   },
   {
     "ID": 28,
