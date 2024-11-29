@@ -307,7 +307,7 @@ speciesImport.then(data => {
                     this.totalPoints++;
                     this.numberOfCorrectAnswers++;
 
-                    this.timeoutSeconds = 6;
+                    this.timeoutSeconds = 4;
                 }
                 else {
                     this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="Helytelen!" />' + answer + '<br/>' +
@@ -319,7 +319,7 @@ speciesImport.then(data => {
                     this.choiceIsRight[indexOfCorrectAnswer] = true;
                     this.isWrongAnswer = true;
 
-                    this.timeoutSeconds = 12;
+                    this.timeoutSeconds = 6;
                 }
 
                 this.continueTimeoutHandle = setTimeout(() => this.countdownToContinue(), 1000);
