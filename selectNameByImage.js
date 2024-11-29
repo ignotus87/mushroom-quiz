@@ -20,6 +20,7 @@ speciesImport.then(data => {
                 incorrect2: '',
                 incorrect3: '',
                 comment: '',
+                gameResultComment: '',
                 actualIndex: 1,
                 totalPoints: 0,
                 imageIndex: 0,
@@ -63,12 +64,20 @@ speciesImport.then(data => {
                 return this.getPuzzleImageByIndex(this.imageIndex);
             },
             puzzleImagesAll() {
+                console.log(this.puzzle);
+                if (this.puzzle === null || this.puzzle.ImageSource === null) {
+                    return null;
+                }
+
                 return this.puzzle.ImageSource.map((_, index) => {
                     return this.getPuzzleImageByIndex(index);
                 });
             },
             commentToShow() {
                 return this.comment;
+            },
+            gameResultCommentToShow() {
+                return this.gameResultComment;
             },
             correctRatio() {
                 if (this.numberOfAnsweredQuestions === 0) {
@@ -87,7 +96,10 @@ speciesImport.then(data => {
             },
             gameTitle() {
                 if (this.game === "SelectNameByImage") {
-                    if (this.gameType === 'all' || this.gameType === '10') {
+                    if (this.isEndOfGame) {
+                        return "Gombakvíz";
+                    }
+                    else if (this.gameType === 'all' || this.gameType === '10') {
                         return "Melyik gombafajt látod a képen?";
                     } else {
                         return "Hibásak gyakorlása: Melyik gombafajt látod a képen?";
@@ -124,6 +136,7 @@ speciesImport.then(data => {
                 return this.imageIndex > 0;
             },
             hasMoreImagesRight() {
+                if (this.puzzle == null) { return false; }
                 return this.imageIndex < this.puzzle.ImageSource.length - 1;
             }
         },
@@ -289,7 +302,7 @@ speciesImport.then(data => {
                 var indexOfAnswer = this.choices.indexOf(answer);
 
                 if (this.isCorrect(answer)) {
-                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/>' + this.puzzle.DistinctionInfo;
+                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
                     this.choiceIsRight[indexOfAnswer] = true;
                     this.totalPoints++;
                     this.numberOfCorrectAnswers++;
@@ -299,7 +312,7 @@ speciesImport.then(data => {
                 else {
                     this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="Helytelen!" />' + answer + '<br/>' +
                         '<img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes:">' + this.puzzle.Name + '</p>' +
-                        '<i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/>' + this.puzzle.DistinctionInfo;
+                        '<i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
                     this.choiceIsWrong[indexOfAnswer] = true;
                     this.mistakeIndexes.push(this.puzzle.ID);
                     var indexOfCorrectAnswer = this.choices.indexOf(this.puzzleName);
@@ -335,6 +348,16 @@ speciesImport.then(data => {
                 this.resetChoiceColors();
                 this.actualIndex++;
                 this.changeSlide(this.imageIndex);
+                this.isAnswered = false;
+                this.isWrongAnswer = false;
+            },
+            setupQuiz() {
+                this.previousPuzzleIDs = [];
+                this.actualIndex = 1;
+                this.totalPoints = 0;
+                this.numberOfCorrectAnswers = 0;
+                this.numberOfAnsweredQuestions = 0;
+                this.comment = '';
                 this.isAnswered = false;
                 this.isWrongAnswer = false;
             },
@@ -378,7 +401,7 @@ speciesImport.then(data => {
             },
             endGame() {
                 this.isEndOfGame = true;
-                this.comment += "<br/>Vége a játéknak! Eredmény: " + Math.floor(this.totalPoints / this.numberOfAnsweredQuestions * 100) + '%';
+                this.gameResultComment = "&#127937; Vége a játéknak! Eredmény: " + Math.floor(this.totalPoints / this.numberOfAnsweredQuestions * 100) + '%';
             },
             randomizeChoices() {
                 this.choices = this.shuffle([this.puzzleName, this.incorrect1.Name, this.incorrect2.Name, this.incorrect3.Name]);
@@ -406,7 +429,7 @@ speciesImport.then(data => {
             }
         },
         created() {
-            this.startQuiz()
+            this.setupQuiz()
         }
     }).mount('#app')
 });

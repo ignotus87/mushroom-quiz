@@ -145,10 +145,11 @@ img {
 
 /* Centered text */
 .puzzle-image-text {
-    position: absolute;
+    /*position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+    background: white;
     color: black;
 }
 
@@ -171,6 +172,7 @@ img {
 .next-button {
     z-index: 999;
     font-size: 1.3em;
+    margin-top: 10px;
 }
 
 body {
@@ -293,5 +295,25 @@ body {
 }
 
 .radio-toolbar input[type="radio"]:checked + label {
-    background-color: #bbb;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: white;
+}
+
+.distinction-info {
+    font-size: 10px;
+}
+
+.game-result-comment {
+    font-weight: bold;
+    font-size: 18px;
 }

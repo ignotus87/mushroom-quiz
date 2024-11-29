@@ -46,32 +46,39 @@
 
         <div class="puzzle-container">
             <p class="game-title">{{ gameTitle }}</p>
+
             <div :class="{ 'show': !isEndOfGame, 'hide': isEndOfGame }">{{ actualIndex }}/{{ totalPuzzleItemsCount }}</div>
 
-            <div class="puzzle-image-container">
-
-                <div class="puzzle-image-text comment-on-answer">
-                    <span v-html="commentToShow"></span>
-                    <div>
-                        <button class="bootstrap-button next-button " :class="{ 'show': isAnswered && !isEndOfGame, 'hide': !isAnswered  || isEndOfGame }" @click="continueAfterAnswer()">{{ nextButtonText }}</button>
-
-                        <div :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }">
-                            <div>
-                                <fieldset class="radio-toolbar">
-                                    <legend>Nehézség:</legend>
-                                    <input type="radio" id="difficulty-beginner" name="difficulty" v-model="difficulty" value="beginner" :checked="isBeginner" />
-                                    <label for="difficulty-beginner">kezdő</label>
-                                    <input type="radio" id="difficulty-advanced" name="difficulty" v-model="difficulty" value="advanced" :checked="isAdvanced" />
-                                    <label for="difficulty-advanced">haladó</label>
-                                </fieldset>
-                            </div>
-                            <div>
-                                <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="reset10()">Új játék (10 kérdés)</button>
-                                <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">Új játék (összes faj [{{ totalSpeciesCount }}])</button>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Comment on answer - displayed after answered -->
+            <div class="puzzle-image-text">
+                <span class="comment-on-answer" v-html="commentToShow"></span>
+                <div class="game-result-comment" v-html="gameResultCommentToShow"></div>
+                <div>
+                    <button class="bootstrap-button next-button " :class="{ 'show': isAnswered && !isEndOfGame, 'hide': !isAnswered  || isEndOfGame }" @click="continueAfterAnswer()">{{ nextButtonText }}</button>
                 </div>
+            </div>
+
+            <!-- New game -->
+            <div :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }">
+                <div>
+                    <fieldset class="radio-toolbar">
+                        <legend>Nehézség:</legend>
+                        <input type="radio" id="difficulty-beginner" name="difficulty" v-model="difficulty" value="beginner" :checked="isBeginner" />
+                        <label for="difficulty-beginner">kezdő</label>
+                        <input type="radio" id="difficulty-advanced" name="difficulty" v-model="difficulty" value="advanced" :checked="isAdvanced" />
+                        <label for="difficulty-advanced">haladó</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Játékindítás</legend>
+                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="reset10()">Új játék (10 kérdés)</button>
+                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">Új játék (összes faj [{{ totalSpeciesCount }}])</button>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="puzzle-image-container" :class="{ 'show': !isAnswered, 'hide': isAnswered }">
 
                 <div class="carousel-wrapper">
 
@@ -96,7 +103,7 @@
             </div>
 
 
-            <div class="choice-container" :class="{ 'show': !isEndOfGame, 'hide': isEndOfGame }">
+            <div class="choice-container" :class="{ 'show': !isEndOfGame && !isAnswered, 'hide': isEndOfGame || isAnswered }">
                 <div class="choice">
                     <button :class="{ 'right-selected': choiceIsRight[0], 'wrong-selected': choiceIsWrong[0] }" class="choice bootstrap-button" @click="answered(choices[0])">{{ choices[0] }}</button>
                 </div>
