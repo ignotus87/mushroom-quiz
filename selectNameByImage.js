@@ -302,7 +302,7 @@ speciesImport.then(data => {
                 var indexOfAnswer = this.choices.indexOf(answer);
 
                 if (this.isCorrect(answer)) {
-                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
+                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i class="scientific-name">' + this.puzzle.ScientificName + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
                     this.choiceIsRight[indexOfAnswer] = true;
                     this.totalPoints++;
                     this.numberOfCorrectAnswers++;
@@ -312,7 +312,7 @@ speciesImport.then(data => {
                 else {
                     this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="Helytelen!" />' + answer + '<br/>' +
                         '<img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes:">' + this.puzzle.Name + '</p>' +
-                        '<i>' + this.puzzle.Category + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
+                        '<i class="scientific-name">' + this.puzzle.ScientificName + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
                     this.choiceIsWrong[indexOfAnswer] = true;
                     this.mistakeIndexes.push(this.puzzle.ID);
                     var indexOfCorrectAnswer = this.choices.indexOf(this.puzzleName);
