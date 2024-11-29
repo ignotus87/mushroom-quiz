@@ -188,6 +188,11 @@ body {
 
 .footer {
     text-align: center;
+    font-size: 10px;
+    position: absolute;
+    display: inline-block;
+    bottom: 2px;
+    right: 2px;
 }
 
 .header, .header a {
@@ -262,3 +267,31 @@ body {
     .dot:hover {
         background-color: #717171;
     }
+
+/* Display radio buttons as standard buttons */
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar label {
+    font-family: Arial;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: white;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #bbb;
+}

@@ -36,10 +36,17 @@ speciesImport.then(data => {
                 isWrongAnswer: false,
                 continueTimeoutHandle: null,
                 timeoutSeconds: 0,
-                isEndOfGame: true
+                isEndOfGame: true,
+                difficulty: 'advanced'
             }
         },
         computed: {
+            isBeginner() {
+                return this.difficulty === 'beginner';
+            },
+            isAdvanced() {
+                return this.difficulty === 'advanced';
+            },
             nextButtonText() {
                 return "Tovább (" + this.timeoutSeconds + ")";
             },
@@ -210,6 +217,25 @@ speciesImport.then(data => {
                 return result;
             },
             getIncorrectAnswers() {
+
+                if (this.isBeginner) {
+                    this.getIncorrectAnswersBeginner();
+                }
+                else {
+                    this.getIncorrectAnswersAdvanced();
+                }
+            },
+            getIncorrectAnswersBeginner() {
+
+                console.log('get incorrect answers - beginner');
+
+                this.incorrect1 = this.getRandomSpeciesFromAllItemsExceptIDs([this.puzzle.ID]);
+                this.incorrect2 = this.getRandomSpeciesFromAllItemsExceptIDs([this.puzzle.ID, this.incorrect1.ID]);
+                this.incorrect3 = this.getRandomSpeciesFromAllItemsExceptIDs([this.puzzle.ID, this.incorrect1.ID, this.incorrect2.ID]);
+            },
+            getIncorrectAnswersAdvanced() {
+
+                console.log('get incorrect answers - advanced');
 
                 if (this.puzzle.SimilarSpecies.length >= 1) {
                     this.incorrect1 = this.speciesList.find((item) => item.ID === this.puzzle.SimilarSpecies[0]);
