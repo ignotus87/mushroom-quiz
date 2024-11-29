@@ -188,15 +188,6 @@ body {
     flex-grow: 1;
 }
 
-.footer {
-    text-align: center;
-    font-size: 10px;
-    position: absolute;
-    display: inline-block;
-    bottom: 2px;
-    right: 2px;
-}
-
 .header, .header a {
     color: black;
     font-family: Arial, sans-serif;
@@ -322,6 +313,27 @@ fieldset {
     font-size: 14px;
 }
 
+.footer {
+    bottom: 2px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #visitor-counter {
+    flex: 1;
     font-size: 10px;
+    text-align: left;
+}
+
+#background-credits {
+    flex: 1;
+    font-size: 10px;
+    display: inline-block;
+    text-align: right;
 }
