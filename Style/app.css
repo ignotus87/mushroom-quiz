@@ -176,7 +176,7 @@ img {
 }
 
 body {
-    background-image: url(/Images/background.jpg);
+    background-image: url(../Images/background.jpg);
     display: flex;
     min-height: 98vh;
     flex-direction: column;
