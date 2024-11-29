@@ -115,17 +115,17 @@ speciesImport.then(data => {
             edibilityInfo() {
                 let temp = '';
                 if (this.puzzle.IsProtected !== undefined && this.puzzle.IsProtected) {
-                    temp += 'védett, ';
+                    temp += '&#x1F64F; védett, ';
                 }
                 if (this.puzzle.EdibilityCategory !== undefined) {
                     if (this.puzzle.EdibilityCategory === 'edible') {
-                        temp += "ehető";
+                        temp += "&#127860; ehető";
                     } else if (this.puzzle.EdibilityCategory === 'conditionallyEdible') {
-                        temp += "feltételesen ehető";
+                        temp += "&#x26A0;&#127860;  feltételesen ehető";
                     } else if (this.puzzle.EdibilityCategory === 'nonEdible') {
-                        temp += "nem ehető";
+                        temp += "&#x1F922; nem ehető";
                     } else if (this.puzzle.EdibilityCategory === 'poisonous') {
-                        temp += "MÉRGEZŐ";
+                        temp += "&#x1F571; MÉRGEZŐ";
                     } else {
                         temp += "???" + this.puzzle.EdibilityCategory;
                     }
