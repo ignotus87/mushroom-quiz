@@ -88,6 +88,8 @@ speciesImport.then(data => {
                 }
             },
             imageSource() {
+                if (this.puzzle == null || this.puzzle.ImageSource == null) { return; }
+
                 let temp = this.puzzle.ImageSource[this.imageIndex].replace('https://', '').replace('http://', '');
                 if (temp.indexOf('/') > 0) {
                     temp = temp.substring(0, temp.indexOf('/'))
