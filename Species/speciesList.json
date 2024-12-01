@@ -187,7 +187,7 @@
       "https://www.gombacsoda.hu/gombak/barna_csengetty%C5%B1gomba",
       "https://www.gombacsoda.hu/gombak/barna_csengetty%C5%B1gomba"
     ],
-    "SimilarSpecies": [],
+    "SimilarSpecies": [ 22, 37 ],
     "DistinctionInfo": "",
     "Todo": "Hasonlók: zöldesszürke döggomba, széleslemezű fülőke",
     "Sources": [
@@ -351,7 +351,7 @@
       "https://www.tiszatoelovilaga.hu/teli-fuloke/",
       "https://www.tiszatoelovilaga.hu/teli-fuloke/"
     ],
-    "SimilarSpecies": [ 23, 24, 25 ],
+    "SimilarSpecies": [ 23, 24, 25, 37 ],
     "DistinctionInfo": ""
   },
   {
@@ -579,12 +579,33 @@
       "https://hu.wikipedia.org/wiki/Ny%C3%A1rfa-t%C5%91kegomba#/media/F%C3%A1jl:Blockhausen,_Pappelsch%C3%BCppling_011.jpg",
       "https://hu.wikipedia.org/wiki/Ny%C3%A1rfa-t%C5%91kegomba#/media/F%C3%A1jl:Pholiota_populnea_G3.jpg"
     ],
-    "SimilarSpecies": [],
+    "SimilarSpecies": [ 37 ],
     "DistinctionInfo": "Keserű íze miatt étkezésre alkalmatlan",
     "Sources": [
       "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&kindId=490&langOrder=hu&caller=bestmonth",
       "https://hu.wikipedia.org/wiki/Ny%C3%A1rfa-t%C5%91kegomba"
     ],
     "Todo": "Hasonló még: gyűrűs tuskógomba, nyálkás és rozsdasárga tőkegomba, lángszínű tőkegomba, tüskés tőkegomba"
+  },
+  {
+    "ID": 37,
+    "Name": "fenyves sisakgomba",
+    "ScientificName": "Galerina marginata",
+    "EdibilityCategory": "poisonous",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Fenyves_sisakgomba#/media/F%C3%A1jl:2011-10-30_Galerina_marginata_(Batsch)_K%C3%BChner_178829.jpg",
+      "https://hu.wikipedia.org/wiki/Fenyves_sisakgomba#/media/F%C3%A1jl:Gifth%C3%A4ublinge.jpg",
+      "https://hu.wikipedia.org/wiki/Fenyves_sisakgomba#/media/F%C3%A1jl:Galerina_marginata_63678.jpg",
+      "https://hu.wikipedia.org/wiki/Fenyves_sisakgomba#/media/F%C3%A1jl:Galerina_marginata.jpg"
+    ],
+    "SimilarSpecies": [ 13, 22, 36 ],
+    "DistinctionInfo": "Syn: fenyő-tőkegomba, fenyves turjángomba",
+    "Sources": [
+      "https://hu.wikipedia.org/wiki/Fenyves_sisakgomba",
+      "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=la&caller=kindList&kindId=211"
+    ],
+    "Todo": "Hasonlók: csoportos tuskógomba, ízletes tőkegomba"
   }
 ]
