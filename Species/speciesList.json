@@ -567,5 +567,24 @@
     "SimilarSpecies": [ 3 ],
     "DistinctionInfo": "",
     "Todo": "Hasonló még: húsbarnás őzlábgomba, büdös őzlábgomba, piruló őzlábgomba"
+  },
+  {
+    "ID": 36,
+    "Name": "nyárfa-tőkegomba",
+    "ScientificName": "Hemipholiota populnea",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Ny%C3%A1rfa-t%C5%91kegomba#/media/F%C3%A1jl:Blockhausen,_Pappelsch%C3%BCppling_011.jpg",
+      "https://hu.wikipedia.org/wiki/Ny%C3%A1rfa-t%C5%91kegomba#/media/F%C3%A1jl:Pholiota_populnea_G3.jpg"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Keserű íze miatt étkezésre alkalmatlan",
+    "Sources": [
+      "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&kindId=490&langOrder=hu&caller=bestmonth",
+      "https://hu.wikipedia.org/wiki/Ny%C3%A1rfa-t%C5%91kegomba"
+    ],
+    "Todo": "Hasonló még: gyűrűs tuskógomba, nyálkás és rozsdasárga tőkegomba, lángszínű tőkegomba, tüskés tőkegomba"
   }
 ]
