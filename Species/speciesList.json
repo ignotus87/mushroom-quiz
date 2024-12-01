@@ -607,5 +607,25 @@
       "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=la&caller=kindList&kindId=211"
     ],
     "Todo": "Hasonlók: csoportos tuskógomba, ízletes tőkegomba"
+  },
+  {
+    "ID": 38,
+    "Name": "szarvas agancsgomba",
+    "ScientificName": "Xylaria hypoxylon",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Szarvas_agancsgomba#/media/F%C3%A1jl:Geweihf%C3%B6rmige_Holzkeule_-_Staghorn_fungus_-_Xylaria_hypoxylon_-_01.jpg",
+      "https://hu.wikipedia.org/wiki/Szarvas_agancsgomba#/media/F%C3%A1jl:Xylaria_hypoxylon_-_panoramio_(2).jpg",
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=696"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Syn: szarvasagancsgomba",
+    "Sources": [
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=696",
+      "https://hu.wikipedia.org/wiki/Szarvas_agancsgomba"
+    ],
+    "Todo": "Hasonlók: kupacs agancsgomba, bunkós agancsgomba"
   }
 ]
