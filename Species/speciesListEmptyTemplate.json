@@ -1,0 +1,17 @@
+[
+  {
+    "ID": 0,
+    "Name": "",
+    "ScientificName": "",
+    "EdibilityCategory": "",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "",
+    "Sources": [
+    ],
+    "Todo": ""
+  }
+]
