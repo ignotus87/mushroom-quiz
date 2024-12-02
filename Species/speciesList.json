@@ -627,5 +627,24 @@
       "https://hu.wikipedia.org/wiki/Szarvas_agancsgomba"
     ],
     "Todo": "Hasonlók: kupacs agancsgomba, bunkós agancsgomba"
+  },
+  {
+    "ID": 39,
+    "Name": "kései laskagomba",
+    "ScientificName": "Pleurotus ostreatus",
+    "EdibilityCategory": "edible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/K%C3%A9s%C5%91i_laskagomba#/media/F%C3%A1jl:Pleurotus_ostreatus_JPG7.jpg",
+      "https://hu.wikipedia.org/wiki/K%C3%A9s%C5%91i_laskagomba#/media/F%C3%A1jl:Gomba_az_Eger-patak_ment%C3%A9n.jpg",
+      "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=502"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Syn: késői laskagomba",
+    "Sources": [
+      "https://hu.wikipedia.org/wiki/K%C3%A9s%C5%91i_laskagomba"
+    ],
+    "Todo": "Hasonlít hozzá a világosbarna, fehéres, melegkedvelő nyári laskagomba"
   }
 ]
