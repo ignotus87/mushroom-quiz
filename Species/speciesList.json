@@ -665,5 +665,25 @@
       "https://hu.wikipedia.org/wiki/H%C3%BAssz%C3%ADn%C5%B1_porcoscs%C3%A9szegomba"
     ],
     "Todo": ""
+  },
+  {
+    "ID": 41,
+    "Name": "rozsdasárga tölcsérgomba",
+    "ScientificName": "Paralepista flaccide",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Rozsdas%C3%A1rga_t%C3%B6lcs%C3%A9rgomba#/media/F%C3%A1jl:Clitocybe_inversa.JPG",
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=385"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "",
+    "Sources": [
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=385",
+      "https://www.gombacsoda.hu/gombak/rozsdas%C3%A1rga_t%C3%B6lcs%C3%A9rgomba",
+      "https://hu.wikipedia.org/wiki/Rozsdas%C3%A1rga_t%C3%B6lcs%C3%A9rgomba"
+    ],
+    "Todo": ""
   }
 ]
