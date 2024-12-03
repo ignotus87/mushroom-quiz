@@ -116,7 +116,7 @@
       "https://hu.wikipedia.org/wiki/Tulip%C3%A1n-cs%C3%A9szegomba#/media/F%C3%A1jl:Sarcosphaera_coronaria_42754.jpg",
       "https://gombahatarozasaim.blogspot.com/2013/05/sarcosphaera-coronaria-tulipan.html"
     ],
-    "SimilarSpecies": [ 14 ],
+    "SimilarSpecies": [ 14, 40 ],
     "DistinctionInfo": "Hasonló: barna csészegombák"
   },
   {
@@ -202,7 +202,7 @@
     "EdibilityCategory": "edible",
     "IsProtected": false,
     "ImageSource": [ "https://hu.wikipedia.org/wiki/Osztr%C3%A1k_cs%C3%A9szegomba" ],
-    "SimilarSpecies": [ 9 ],
+    "SimilarSpecies": [ 9, 40 ],
     "DistinctionInfo": "",
     "Todo": "Hasonlók: piros csészegomba, narancsvörös csészegomba, Sarcoscypha jurana",
     "Sources": [
@@ -646,5 +646,24 @@
       "https://hu.wikipedia.org/wiki/K%C3%A9s%C5%91i_laskagomba"
     ],
     "Todo": "Hasonlít hozzá a világosbarna, fehéres, melegkedvelő nyári laskagomba"
+  },
+  {
+    "ID": 40,
+    "Name": "hússzínű porcoscsészegomba",
+    "ScientificName": "Ascocoryne sarcoides",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/H%C3%BAssz%C3%ADn%C5%B1_porcoscs%C3%A9szegomba#/media/F%C3%A1jl:Ascocoryne_sarcoides_G4_(2).JPG",
+      "https://hu.wikipedia.org/wiki/H%C3%BAssz%C3%ADn%C5%B1_porcoscs%C3%A9szegomba#/media/F%C3%A1jl:Ascocoryne_sarcoides.jpg"
+    ],
+    "SimilarSpecies": [ 9, 14 ],
+    "DistinctionInfo": "Syn: lila kocsonyagomba",
+    "Sources": [
+      "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=la&caller=kindList&kindId=856",
+      "https://hu.wikipedia.org/wiki/H%C3%BAssz%C3%ADn%C5%B1_porcoscs%C3%A9szegomba"
+    ],
+    "Todo": ""
   }
 ]
