@@ -671,6 +671,7 @@
     "Name": "rozsdasárga tölcsérgomba",
     "ScientificName": "Paralepista flaccide",
     "EdibilityCategory": "nonEdible",
+    "EdibilityInfo": "Habár nem mérgező, fanyar - kesernyés íze miatt nem fogyasztható gomba.",
     "IsSellable": false,
     "IsProtected": false,
     "ImageSource": [
@@ -684,6 +685,26 @@
       "https://www.gombacsoda.hu/gombak/rozsdas%C3%A1rga_t%C3%B6lcs%C3%A9rgomba",
       "https://hu.wikipedia.org/wiki/Rozsdas%C3%A1rga_t%C3%B6lcs%C3%A9rgomba"
     ],
-    "Todo": ""
+    "Todo": "Hasonlók: sereges tölcsérgomba"
+  },
+  {
+    "ID": 42,
+    "Name": "sugaras likacsosgomba",
+    "ScientificName": "Neofavolus alveolaris",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Sugaras_likacsosgomba#/media/F%C3%A1jl:2009-05-12_Neofavolus_alveolaris_1.jpg",
+      "https://hu.wikipedia.org/wiki/Sugaras_likacsosgomba#/media/F%C3%A1jl:Neofavolus_alveolaris_10.jpg",
+      "https://hu.wikipedia.org/wiki/Sugaras_likacsosgomba#/media/F%C3%A1jl:2009-05-12_Neofavolus_alveolaris_2.jpg"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Syn.: Favolus europaeus, Polyporus alveolaris, Polyporus mori, sugaras likacsgomba",
+    "Sources": [
+      "https://hu.wikipedia.org/wiki/Sugaras_likacsosgomba",
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=515"
+    ],
+    "Todo": "más tág pórusú likacsosgomba (Polyporus) fajokkal téveszthető össze: a kisebb, centrikus tönkű fagyálló likacsosgombával (P. arcularius), a nagyobb hasonló színű pisztricgombával (P. squamosus) és a védett olaszgomba (P. tuberaster) fajokkal."
   }
 ]
