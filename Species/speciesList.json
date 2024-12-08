@@ -753,5 +753,25 @@
       "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=1672"
     ],
     "Todo": ""
+  },
+  {
+    "ID": 45,
+    "Name": "hasadtlemezű gomba",
+    "ScientificName": "Schizophyllum commune",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Hasadtlemez%C5%B1_gomba#/media/F%C3%A1jl:Klanosl%C3%ADstka09115.JPG",
+      "https://hu.wikipedia.org/wiki/Hasadtlemez%C5%B1_gomba#/media/F%C3%A1jl:Spaltblaettling4.jpg",
+      "https://hu.wikipedia.org/wiki/Hasadtlemez%C5%B1_gomba#/media/F%C3%A1jl:Schizophyllum_commune,_split_gill.jpg"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "",
+    "Sources": [
+      "https://hu.wikipedia.org/wiki/Hasadtlemez%C5%B1_gomba",
+      "https://www.miskolcigombasz.hu/fajlista/index.php?action=showKind&langOrder=hu&caller=kindList&kindId=607"
+    ],
+    "Todo": ""
   }
 ]
