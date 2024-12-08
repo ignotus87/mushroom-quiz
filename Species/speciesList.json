@@ -714,5 +714,25 @@
       "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=515"
     ],
     "Todo": "más tág pórusú likacsosgomba (Polyporus) fajokkal téveszthető össze: a kisebb, centrikus tönkű fagyálló likacsosgombával (P. arcularius), a nagyobb hasonló színű pisztricgombával (P. squamosus) és a védett olaszgomba (P. tuberaster) fajokkal."
+  },
+  {
+    "ID": 43,
+    "Name": "aranyos rezgőgomba",
+    "ScientificName": "Tremella mesenterica",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Aranyos_rezg%C5%91gomba#/media/F%C3%A1jl:Tremella_mesenterica_JPG1.jpg",
+      "https://hu.wikipedia.org/wiki/Aranyos_rezg%C5%91gomba#/media/F%C3%A1jl:Goldgelber_Zitterling_-_Tremella_mesenterica_-_yellow_brain_-_Tr%C3%A9melle_m%C3%A9sent%C3%A9rique_-_golden_jelly_fungus_-_01.jpg",
+      "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=645"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "Bár a korhadó ágakon látható, nem annak anyagával táplálkozik, hanem az azt lebontó Peniophora gombának a parazitája.",
+    "Sources": [
+      "https://hu.wikipedia.org/wiki/Aranyos_rezg%C5%91gomba",
+      "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=645"
+    ],
+    "Todo": "Hasonlít hozzá a fenyő korhadékán növő narancssárga gümőgomba vagy a nagyobb, ehető fodros rezgőgomba és vörösbarna színű, nem ehető bükk-álrezgőgomba."
   }
 ]
