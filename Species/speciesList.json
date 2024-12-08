@@ -727,12 +727,31 @@
       "https://hu.wikipedia.org/wiki/Aranyos_rezg%C5%91gomba#/media/F%C3%A1jl:Goldgelber_Zitterling_-_Tremella_mesenterica_-_yellow_brain_-_Tr%C3%A9melle_m%C3%A9sent%C3%A9rique_-_golden_jelly_fungus_-_01.jpg",
       "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=645"
     ],
-    "SimilarSpecies": [],
+    "SimilarSpecies": [ 44 ],
     "DistinctionInfo": "Bár a korhadó ágakon látható, nem annak anyagával táplálkozik, hanem az azt lebontó Peniophora gombának a parazitája.",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Aranyos_rezg%C5%91gomba",
       "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=645"
     ],
     "Todo": "Hasonlít hozzá a fenyő korhadékán növő narancssárga gümőgomba vagy a nagyobb, ehető fodros rezgőgomba és vörösbarna színű, nem ehető bükk-álrezgőgomba."
+  },
+  {
+    "ID": 44,
+    "Name": "narancssárga gümőgomba",
+    "ScientificName": "Dacrymyces chrysospermus",
+    "EdibilityCategory": "nonEdible",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=1672",
+      "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_g%C3%BCm%C5%91gomba#/media/F%C3%A1jl:Dacrymyces_palmatus_2.JPG"
+    ],
+    "SimilarSpecies": [ 43 ],
+    "DistinctionInfo": "Fenyők elhalt, korhadó törzsén él, többnyire ott ahol a kéreg már hiányzik vagy a kéreg repedésein bújik ki.",
+    "Sources": [
+      "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_g%C3%BCm%C5%91gomba",
+      "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=1672"
+    ],
+    "Todo": ""
   }
 ]
