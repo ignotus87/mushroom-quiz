@@ -773,5 +773,28 @@
       "https://www.miskolcigombasz.hu/fajlista/index.php?action=showKind&langOrder=hu&caller=kindList&kindId=607"
     ],
     "Todo": ""
+  },
+  {
+    "ID": 46,
+    "Name": "lilaszegélyű egyrétűtapló",
+    "ScientificName": "Trichaptum biforme",
+    "EdibilityCategory": "nonEdible",
+    "EdibilityInfo": "étkezési értéke nincs",
+    "IsSellable": false,
+    "IsProtected": false,
+    "ImageSource": [
+      "https://hu.wikipedia.org/wiki/Lilaszeg%C3%A9ly%C5%B1_egyr%C3%A9t%C5%B1tapl%C3%B3#/media/F%C3%A1jl:Trichaptum_biforme_2.jpg",
+      "https://hu.wikipedia.org/wiki/Lilaszeg%C3%A9ly%C5%B1_egyr%C3%A9t%C5%B1tapl%C3%B3#/media/F%C3%A1jl:2012-01-27_Trichaptum_biforme_(Fr.)_Ryvarden_197034.jpg",
+      "https://hu.wikipedia.org/wiki/Lilaszeg%C3%A9ly%C5%B1_egyr%C3%A9t%C5%B1tapl%C3%B3#/media/F%C3%A1jl:Fungus_272904644.jpg",
+      "https://hu.wikipedia.org/wiki/Lilaszeg%C3%A9ly%C5%B1_egyr%C3%A9t%C5%B1tapl%C3%B3#/media/F%C3%A1jl:Violet-Toothed_Polypore_(3904273043).jpg"
+    ],
+    "SimilarSpecies": [],
+    "DistinctionInfo": "A többi lilás trámájú Trichaptum fajtól nagyobb termete, pórusos trámája és élőhelye különbözteti meg.",
+    "Synonyms": "Hirschioporus paragmenus, bükk-egyrétűtapló, lila egyrétűtapló",
+    "Sources": [
+      "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=760",
+      "https://hu.wikipedia.org/wiki/Lilaszeg%C3%A9ly%C5%B1_egyr%C3%A9t%C5%B1tapl%C3%B3"
+    ],
+    "Todo": ""
   }
 ]
