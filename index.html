@@ -92,7 +92,7 @@
                     <div class="carousel">
                         <div class="item" v-for="(puzzleImage, index) in puzzleImagesAll">
                             <img class="puzzle-image" v-bind:src="puzzleImage" :class="{ 'overlay': isAnswered }" alt="Mi ez a gomba?" />
-                            <i><small><br />{{ Source }}: <u class="link" @click="openImageSource()">{{ imageSource }}</u></small></i>
+                            <i><small><br />{{ t$('Source') }}: <u class="link" @click="openImageSource()">{{ imageSource }}</u></small></i>
                         </div>
                     </div>
 
