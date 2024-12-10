@@ -13,7 +13,7 @@
     ],
     "SimilarSpecies": [ 5, 29, 30, 31, 32, 33, 34 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 2,
@@ -25,7 +25,7 @@
     "ImageSource": [ "https://hu.wikipedia.org/wiki/B%C3%BCd%C3%B6s_galambgomba" ],
     "SimilarSpecies": [ 34 ],
     "DistinctionInfo": "Könnyen felismerhető, más gombafajjal nem téveszthető össze.",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=568"
     ]
@@ -40,7 +40,7 @@
     "ImageSource": [ "https://hu.wikipedia.org/wiki/Nagy_%C5%91zl%C3%A1bgomba" ],
     "SimilarSpecies": [ 35 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlóak még: csipkés őzlábgomba, párducgalóca, más őzlágbombák, piruló őzlábgomba, tüskés őzlábgomba"
   },
   {
@@ -53,7 +53,7 @@
     "ImageSource": [ "https://hu.wikipedia.org/wiki/%C5%90zl%C3%A1bgal%C3%B3ca" ],
     "SimilarSpecies": [ 1, 3, 29, 31 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://www.inaturalist.org/taxa/938922-Saproamanita-vittadinii"
     ],
@@ -72,7 +72,7 @@
     ],
     "SimilarSpecies": [ 1, 29, 31, 18, 19, 20, 30, 33 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonló: Csiperkék (Agaricaceae), Pöfetegek (Lycoperdaceae)"
   },
   {
@@ -89,13 +89,13 @@
     ],
     "SimilarSpecies": [ 1 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók: óriás bocskorosgomba, gyilkos galóca, hegyeskalapú galóca"
   },
   {
     "ID": 7,
     "Name": "mezei szegfűgomba",
-	"NameEn": "fairy ring mushroom",
+    "NameEn": "fairy ring mushroom",
     "ScientificName": "Marasmius oreades",
     "EdibilityCategory": "edible",
     "IsProtected": false,
@@ -105,13 +105,13 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "kerti susulyka, mezei tölcsérgomba"
   },
   {
     "ID": 8,
     "Name": "légyölő galóca",
-	"NameEn": "fly agaric",
+    "NameEn": "fly agaric",
     "ScientificName": "Amanita muscaria",
     "EdibilityCategory": "poisonous",
     "IsProtected": false,
@@ -122,13 +122,13 @@
     ],
     "SimilarSpecies": [ 1, 3, 4, 29, 31 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonló: császárgalóca, barna galóca, pöfetegek"
   },
   {
     "ID": 9,
     "Name": "tulipán-csészegomba",
-	"NameEn": "pink crown",
+    "NameEn": "pink crown",
     "ScientificName": "Sarcosphaera coronaria",
     "EdibilityCategory": "poisonous",
     "IsProtected": false,
@@ -138,12 +138,12 @@
     ],
     "SimilarSpecies": [ 14, 40 ],
     "DistinctionInfo": "Hasonló: barna csészegombák",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 10,
     "Name": "narancsvörös álrókagomba",
-	"NameEn": "false chanterelle",
+    "NameEn": "false chanterelle",
     "ScientificName": "Hygrophoropsis aurantiaca",
     "EdibilityCategory": "nonEdible",
     "IsProtected": false,
@@ -159,13 +159,13 @@
       "https://hu.wikipedia.org/wiki/Narancsv%C3%B6r%C3%B6s_%C3%A1lr%C3%B3kagomba"
     ],
     "DistinctionInfo": "Régebben ehetőnek mondták, de már nem ajánlják fogyasztásra, mert gyomorrontást okozhat.",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók: sárga rókagomba"
   },
   {
     "ID": 11,
     "Name": "rőt áltrifla",
-	"NameEn": "common earthball",
+    "NameEn": "common earthball",
     "ScientificName": "Scleroderma citrinum",
     "EdibilityCategory": "poisonous",
     "IsProtected": false,
@@ -175,7 +175,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók: áltriflák, bimbós vagy szürke pöfeteg, nyári szarvasgomba",
     "Sources": [
       "https://hu.wikipedia.org/wiki/R%C5%91t_%C3%A1ltrifla"
@@ -184,7 +184,7 @@
   {
     "ID": 12,
     "Name": "begöngyöltszélű cölöpgomba",
-	"NameEnd": "brown roll-rim",
+    "NameEnd": "brown roll-rim",
     "ScientificName": "Paxillus involutus",
     "EdibilityCategory": "poisonous",
     "IsProtected": false,
@@ -194,7 +194,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "Többszöri fogyasztása allergiás reakciót, sőt halált is okozhat.",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók: tejelőgombák",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Beg%C3%B6ngy%C3%B6ltsz%C3%A9l%C5%B1_c%C3%B6l%C3%B6pgomba"
@@ -203,7 +203,7 @@
   {
     "ID": 13,
     "Name": "barna csengettyűgomba",
-	"NameEn": "fawn mushroom",
+    "NameEn": "fawn mushroom",
     "ScientificName": "Pluteus cervinus",
     "EdibilityCategory": "edible",
     "IsProtected": false,
@@ -217,7 +217,7 @@
     ],
     "SimilarSpecies": [ 22, 37 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók: zöldesszürke döggomba, széleslemezű fülőke",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Barna_csengetty%C5%B1gomba",
@@ -227,14 +227,14 @@
   {
     "ID": 14,
     "Name": "osztrák csészegomba",
-	"NameEn": "scarlet elf cup",
+    "NameEn": "scarlet elf cup",
     "ScientificName": "Sarcoscypha austriaca",
     "EdibilityCategory": "edible",
     "IsProtected": false,
     "ImageSource": [ "https://hu.wikipedia.org/wiki/Osztr%C3%A1k_cs%C3%A9szegomba" ],
     "SimilarSpecies": [ 9, 40 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók: piros csészegomba, narancsvörös csészegomba, Sarcoscypha jurana",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Osztr%C3%A1k_cs%C3%A9szegomba"
@@ -243,7 +243,7 @@
   {
     "ID": 15,
     "Name": "elefántcsont-csigagomba",
-	"NameEn": "ivory waxy cap",
+    "NameEn": "ivory waxy cap",
     "ScientificName": "Hygrophorus eburneus",
     "EdibilityCategory": "edible",
     "IsProtected": false,
@@ -253,7 +253,7 @@
     ],
     "SimilarSpecies": [ 16, 17 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók: viaszfehér tölcsérgomba, fehér pereszke, kajsza lisztgomba",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Elef%C3%A1ntcsont-csigagomba"
@@ -262,7 +262,7 @@
   {
     "ID": 16,
     "Name": "fagyálló csigagomba",
-	"NameEn": "olive-brown waxy cap",
+    "NameEn": "olive-brown waxy cap",
     "ScientificName": "Hygrophorus hypothejus",
     "EdibilityCategory": "edible",
     "IsProtected": false,
@@ -274,7 +274,7 @@
     ],
     "SimilarSpecies": [ 15, 17 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonló: olajszínű csigagomba",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Fagy%C3%A1ll%C3%B3_csigagomba"
@@ -283,7 +283,7 @@
   {
     "ID": 17,
     "Name": "szagos csigagomba",
-	"NameEn": "gray almond waxy cap",
+    "NameEn": "gray almond waxy cap",
     "ScientificName": "Hygrophorus agathosmus",
     "EdibilityCategory": "edible",
     "IsProtected": false,
@@ -295,7 +295,7 @@
     ],
     "SimilarSpecies": [ 15, 16 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonló: szürke csigagomba",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Szagos_csigagomba"
@@ -304,7 +304,7 @@
   {
     "ID": 18,
     "Name": "erdei csiperke",
-	"NameEn": "scaly wood mushroom",
+    "NameEn": "scaly wood mushroom",
     "ScientificName": "Agaricus silvaticus",
     "EdibilityCategory": "edible",
     "IsSellable": true,
@@ -316,7 +316,7 @@
     ],
     "SimilarSpecies": [ 19, 20, 30, 33 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonló: barnapikkelyű csipereke, óriás csiperke, szélespikkelyű csipereke, ligeti vagy csoportos csiperke, téglavörös susulyka, piruló őzlábgomba, piruló galóca",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Erdei_csiperke"
@@ -325,7 +325,7 @@
   {
     "ID": 19,
     "Name": "ízletes csiperke",
-	"NameEn": "pavement mushroom",
+    "NameEn": "pavement mushroom",
     "ScientificName": "Agaricus bitorquis",
     "EdibilityCategory": "edible",
     "IsSellable": true,
@@ -337,7 +337,7 @@
     "SimilarSpecies": [ 1, 18, 20, 30, 33 ],
     "Todo": "Hasonló: sziki csipreke, karbolszagú csiperke, gyilkos galóca",
     "DistinctionInfo": "kettős élű gallér, keskeny lemezek a húshoz képest",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://hu.wikipedia.org/wiki/%C3%8Dzletes_csiperke"
     ]
@@ -345,7 +345,7 @@
   {
     "ID": 20,
     "Name": "karbolszagú csiperke",
-	"NameEn": "yellow-staining agaricus",
+    "NameEn": "yellow-staining agaricus",
     "ScientificName": "Agaricus xanthodermus",
     "EdibilityCategory": "poisonous",
     "IsSellable": false,
@@ -357,7 +357,7 @@
     ],
     "SimilarSpecies": [ 1, 18, 19, 30, 33 ],
     "DistinctionInfo": "gyakori, hányást, hasmenést okoz",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "sárguló és vegyszerszagú csiperkék, ehető csiperkék",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Karbolszag%C3%BA_csiperke"
@@ -366,7 +366,7 @@
   {
     "ID": 21,
     "Name": "sárgapelyhű csigagomba",
-	"NameEn": "flaky waxy cap",
+    "NameEn": "flaky waxy cap",
     "ScientificName": "Hygrophorus chrysodon",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -379,12 +379,12 @@
     ],
     "SimilarSpecies": [ 15 ],
     "DistinctionInfo": "A hasonló elefántcsont-csigagomba teljesen fehér.",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 22,
     "Name": "téli fülőke",
-	"NameEn": "velvet foot",
+    "NameEn": "velvet foot",
     "ScientificName": "Flammulina velutipes",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -399,12 +399,12 @@
     ],
     "SimilarSpecies": [ 23, 24, 25, 37 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 23,
     "Name": "sárga kénvirággomba",
-	"NameEn": "sulphur tuft",
+    "NameEn": "sulphur tuft",
     "ScientificName": "Hypoloma fasciculare",
     "EdibilityCategory": "poisonous",
     "IsSellable": false,
@@ -416,12 +416,12 @@
     ],
     "SimilarSpecies": [ 22, 24, 25 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 24,
     "Name": "vöröses kénvirággomba",
-	"NameEn": "brick cap",
+    "NameEn": "brick cap",
     "ScientificName": "Hypoloma latertium",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -435,12 +435,12 @@
     ],
     "SimilarSpecies": [ 22, 23, 25 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 25,
     "Name": "fenyő-kénvirággomba",
-	"NameEn": "conifer tuft",
+    "NameEn": "conifer tuft",
     "ScientificName": "Hypoloma capnoides",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -454,12 +454,12 @@
     ],
     "SimilarSpecies": [ 22, 23, 24 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 26,
     "Name": "arany tinóru",
-	"NameEn": "red cracking bolete",
+    "NameEn": "red cracking bolete",
     "ScientificName": "Xerocomellus chrysenteron",
     "EdibilityCategory": "edible",
     "IsSellable": true,
@@ -471,12 +471,12 @@
     ],
     "SimilarSpecies": [ 27 ],
     "DistinctionInfo": "Összetéveszthető az ehető rozsdabarna tinóruval, és hasonlít hozzá még az ehető piros tinóru és a mérgező farkastinóru.",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 27,
     "Name": "rozsdabarna tinóru",
-	"NameEn": "suede bolete",
+    "NameEn": "suede bolete",
     "ScientificName": "Xerocomus subtomentosus var. ferruginosus",
     "EdibilityCategory": "edible",
     "IsSellable": true,
@@ -487,13 +487,13 @@
     ],
     "SimilarSpecies": [ 26 ],
     "DistinctionInfo": "Régen: recéstönkű nemezestinóru. Jellemző bélyegei: nem repedező kalap, kalapbőr alatt rózsaszínes hús, fehéressárga hús.",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Összetéveszthető a világosabb kalapú, sárga húsú Xerocomus subtomentosus fajjal, melynek kalapbőre alatt a hús nem rózsaszínes."
   },
   {
     "ID": 28,
     "Name": "narancssárga laskagomba",
-	"NameEn": "orange mock oyster",
+    "NameEn": "orange mock oyster",
     "ScientificName": "Phyllotopsis nidulans",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -507,12 +507,12 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "Régen: nemezes narancsoslaska",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 29,
     "Name": "fehér galóca",
-	"NameEn": "fool's mushroom",
+    "NameEn": "fool's mushroom",
     "ScientificName": "Amanita verna",
     "EdibilityCategory": "poisonous",
     "IsSellable": false,
@@ -525,12 +525,12 @@
     ],
     "SimilarSpecies": [ 1, 30, 5 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": ""
+    "DistinctionInfoEn": ""
   },
   {
     "ID": 30,
     "Name": "erdőszéli csiperke",
-	"NameEn": "horse mushroom",
+    "NameEn": "horse mushroom",
     "ScientificName": "Agaricus arvensis",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -543,13 +543,13 @@
     ],
     "SimilarSpecies": [ 1, 29, 31, 32, 33 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonlók még: karbolszagú csiperke, mezei csiperke, gumós csiperke"
   },
   {
     "ID": 31,
     "Name": "citromgalóca",
-	"NameEn": "false death cap",
+    "NameEn": "false death cap",
     "ScientificName": "Amanita citrina",
     "EdibilityCategory": "poisonous",
     "IsSellable": false,
@@ -561,13 +561,13 @@
     ],
     "SimilarSpecies": [ 1, 29, 30, 32, 33 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": ""
   },
   {
     "ID": 32,
     "Name": "akácpereszke",
-	"NameEn": "Cercopemyces rickenii",
+    "NameEn": "Cercopemyces rickenii",
     "ScientificName": "Cercopemyces rickenii",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -580,13 +580,13 @@
     ],
     "SimilarSpecies": [ 1, 29, 30, 31, 33 ],
     "DistinctionInfo": "Régen: akác pikkelyespereszke, armillaria rickenii, floccularia rickenii",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": ""
   },
   {
     "ID": 33,
     "Name": "gumós csiperke",
-	"NameEn": "Agaricus essettei",
+    "NameEn": "Agaricus essettei",
     "ScientificName": "Agaricus essettei",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -600,13 +600,13 @@
     ],
     "SimilarSpecies": [ 1, 29, 30, 31 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": ""
   },
   {
     "ID": 34,
     "Name": "dióízű galambgomba",
-	"NameEn": "greasy green brittlegill",
+    "NameEn": "greasy green brittlegill",
     "ScientificName": "Russula heterophylla",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -618,13 +618,13 @@
     ],
     "SimilarSpecies": [ 1, 29, 30, 31 ],
     "DistinctionInfo": "Syn: simahátú galambgomba",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": ""
   },
   {
     "ID": 35,
     "Name": "karcsú őzlábgomba",
-	"NameEn": "slender parasol",
+    "NameEn": "slender parasol",
     "ScientificName": "Macrolepiota mastoidea",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -637,13 +637,13 @@
     ],
     "SimilarSpecies": [ 3 ],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Todo": "Hasonló még: húsbarnás őzlábgomba, büdös őzlábgomba, piruló őzlábgomba"
   },
   {
     "ID": 36,
     "Name": "nyárfa-tőkegomba",
-	"NameEn": "destructive pholiota",
+    "NameEn": "destructive pholiota",
     "ScientificName": "Hemipholiota populnea",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -654,7 +654,7 @@
     ],
     "SimilarSpecies": [ 37 ],
     "DistinctionInfo": "Keserű íze miatt étkezésre alkalmatlan",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&kindId=490&langOrder=hu&caller=bestmonth",
       "https://hu.wikipedia.org/wiki/Ny%C3%A1rfa-t%C5%91kegomba"
@@ -664,7 +664,7 @@
   {
     "ID": 37,
     "Name": "fenyves sisakgomba",
-	"NameEn": "deadly skullcap",
+    "NameEn": "deadly skullcap",
     "ScientificName": "Galerina marginata",
     "EdibilityCategory": "poisonous",
     "IsSellable": false,
@@ -677,7 +677,7 @@
     ],
     "SimilarSpecies": [ 13, 22, 36 ],
     "DistinctionInfo": "Syn: fenyő-tőkegomba, fenyves turjángomba",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Fenyves_sisakgomba",
       "http://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=la&caller=kindList&kindId=211"
@@ -687,7 +687,7 @@
   {
     "ID": 38,
     "Name": "szarvas agancsgomba",
-	"NameEn": "candlesnuff fungus",
+    "NameEn": "candlesnuff fungus",
     "ScientificName": "Xylaria hypoxylon",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -699,7 +699,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "Syn: szarvasagancsgomba",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=696",
       "https://hu.wikipedia.org/wiki/Szarvas_agancsgomba"
@@ -709,7 +709,7 @@
   {
     "ID": 39,
     "Name": "kései laskagomba",
-	"NameEn": "oyster mushroom",
+    "NameEn": "oyster mushroom",
     "ScientificName": "Pleurotus ostreatus",
     "EdibilityCategory": "edible",
     "IsSellable": false,
@@ -721,7 +721,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "Syn: késői laskagomba",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://hu.wikipedia.org/wiki/K%C3%A9s%C5%91i_laskagomba"
     ],
@@ -730,7 +730,7 @@
   {
     "ID": 40,
     "Name": "hússzínű porcoscsészegomba",
-	"NameEn": "purple jelly drops",
+    "NameEn": "purple jelly drops",
     "ScientificName": "Ascocoryne sarcoides",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -741,7 +741,7 @@
     ],
     "SimilarSpecies": [ 9, 14 ],
     "DistinctionInfo": "Syn: lila kocsonyagomba",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=la&caller=kindList&kindId=856",
       "https://hu.wikipedia.org/wiki/H%C3%BAssz%C3%ADn%C5%B1_porcoscs%C3%A9szegomba"
@@ -751,7 +751,7 @@
   {
     "ID": 41,
     "Name": "rozsdasárga tölcsérgomba",
-	"NameEn": "tawny funnel cap",
+    "NameEn": "tawny funnel cap",
     "ScientificName": "Paralepista flaccide",
     "EdibilityCategory": "nonEdible",
     "EdibilityInfo": "Habár nem mérgező, fanyar - kesernyés íze miatt nem fogyasztható gomba.",
@@ -763,7 +763,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=385",
       "https://www.gombacsoda.hu/gombak/rozsdas%C3%A1rga_t%C3%B6lcs%C3%A9rgomba",
@@ -774,7 +774,7 @@
   {
     "ID": 42,
     "Name": "sugaras likacsosgomba",
-	"NameEn": "hexagonal-pored polypore",
+    "NameEn": "hexagonal-pored polypore",
     "ScientificName": "Neofavolus alveolaris",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -786,7 +786,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "Syn.: Favolus europaeus, Polyporus alveolaris, Polyporus mori, sugaras likacsgomba",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Sugaras_likacsosgomba",
       "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=515"
@@ -796,7 +796,7 @@
   {
     "ID": 43,
     "Name": "aranyos rezgőgomba",
-	"NameEn": "yellow brain",
+    "NameEn": "yellow brain",
     "ScientificName": "Tremella mesenterica",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -808,7 +808,7 @@
     ],
     "SimilarSpecies": [ 44 ],
     "DistinctionInfo": "Bár a korhadó ágakon látható, nem annak anyagával táplálkozik, hanem az azt lebontó Peniophora gombának a parazitája.",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Aranyos_rezg%C5%91gomba",
       "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=645"
@@ -818,7 +818,7 @@
   {
     "ID": 44,
     "Name": "narancssárga gümőgomba",
-	"NameEn": "orange jelly spot",
+    "NameEn": "orange jelly spot",
     "ScientificName": "Dacrymyces chrysospermus",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -829,7 +829,7 @@
     ],
     "SimilarSpecies": [ 43 ],
     "DistinctionInfo": "Fenyők elhalt, korhadó törzsén él, többnyire ott ahol a kéreg már hiányzik vagy a kéreg repedésein bújik ki.",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Narancss%C3%A1rga_g%C3%BCm%C5%91gomba",
       "https://www.miskolcigombasz.hu/fajlistank.php?action=showKind&langOrder=hu&caller=kindList&kindId=1672"
@@ -839,7 +839,7 @@
   {
     "ID": 45,
     "Name": "hasadtlemezű gomba",
-	"NameEn": "split-gill mushroom",
+    "NameEn": "split-gill mushroom",
     "ScientificName": "Schizophyllum commune",
     "EdibilityCategory": "nonEdible",
     "IsSellable": false,
@@ -851,7 +851,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Sources": [
       "https://hu.wikipedia.org/wiki/Hasadtlemez%C5%B1_gomba",
       "https://www.miskolcigombasz.hu/fajlista/index.php?action=showKind&langOrder=hu&caller=kindList&kindId=607"
@@ -861,7 +861,7 @@
   {
     "ID": 46,
     "Name": "lilaszegélyű egyrétűtapló",
-	"NameEn": "violet-toothed polypore",
+    "NameEn": "violet-toothed polypore",
     "ScientificName": "Trichaptum biforme",
     "EdibilityCategory": "nonEdible",
     "EdibilityInfo": "étkezési értéke nincs",
@@ -875,7 +875,7 @@
     ],
     "SimilarSpecies": [],
     "DistinctionInfo": "A többi lilás trámájú Trichaptum fajtól nagyobb termete, pórusos trámája és élőhelye különbözteti meg.",
-	"DistinctionInfoEn": "",
+    "DistinctionInfoEn": "",
     "Synonyms": "Hirschioporus paragmenus, bükk-egyrétűtapló, lila egyrétűtapló",
     "Sources": [
       "https://www.miskolcigombasz.hu/fajlistank.php?PPE_SID=&action=showKind&langOrder=hu&caller=kindList&kindId=760",
