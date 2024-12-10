@@ -1,0 +1,122 @@
+[
+  {
+    "key": "FungiOfHungary",
+    "hu": "Magyarország gombái",
+	"en": "Fungi of Hungary"
+  },
+  {
+    "key": "Score",
+    "hu": "Pontszám",
+	"en": "Score"
+  },
+  {
+    "key": "Mistakes",
+    "hu": "Hibák",
+	"en": "Mistakes"
+  },
+  {
+    "key": "SendFeedback",
+    "hu": "Visszajelzés küldése",
+	"en": "Send feedback"
+  },
+  {
+	"key": "FeedbackEmailSubject",
+    "hu": "Visszajelzés a weboldalról",
+	"en": "Feedback from the website"
+  },
+  {
+	"key": "Difficulty",
+    "hu": "Nehézség",
+	"en": "Difficulty"
+  },
+  {
+	"key": "beginner",
+    "hu": "kezdő",
+	"en": "beginner"
+  },
+  {
+	"key": "advanced",
+    "hu": "haladó",
+	"en": "advanced"
+  },
+  {
+	"key": "StartGame",
+    "hu": "Játékindítás",
+	"en": "Start game"
+  },
+  {
+	"key": "NewGame10",
+    "hu": "Új játék (10 kérdés)",
+	"en": "New game (10 questions)"
+  },
+  {
+	"key": "NewGameAllSpecies",
+    "hu": "Új játék (mind a {{ totalSpeciesCount }} faj)",
+	"en": "New game (all {{ totalSpeciesCount }} species)"
+  },
+  {
+	"key": "Source",
+    "hu": "Forrás",
+	"en": "Source"
+  },
+  {
+	"key": "WhatFungiSpeciesDoYouSeeInThePicture",
+    "hu": "Melyik gombafajt látod a képen?",
+	"en": "What kind of mushroom do you see in the picture?"
+  },
+  {
+	"key": "PracticeMistakes",
+    "hu": "Hibásak gyakorlása",
+	"en": "Practice mistakes"
+  },
+  {
+	"key": "GameOver",
+    "hu": "Vége a játéknak!",
+	"en": "Game over!"
+  },
+  {
+	"key": "Result",
+    "hu": "Eredmény",
+	"en": "Result"
+  },
+  {
+	"key": "AnswerIsRight",
+    "hu": "Helyes",
+	"en": "Right"
+  },
+  {
+	"key": "AnswerIsWrong",
+    "hu": "Helytelen",
+	"en": "Wrong"
+  },
+  {
+	"key": "Restart",
+    "hu": "Újrakezdés",
+	"en": "Restart"
+  },
+  {
+	"key": "Continue",
+    "hu": "Tovább",
+	"en": "Continue"
+  },
+  {
+	"key": "edible",
+    "hu": "ehető",
+	"en": "edible"
+  },
+  {
+	"key": "nonEdible",
+    "hu": "nem ehető",
+	"en": "non-edible"
+  },
+  {
+	"key": "conditionallyEdible",
+    "hu": "feltételesen ehető",
+	"en": "conditionally edible"
+  },
+  {
+	"key": "poisonous",
+    "hu": "MÉRGEZŐ",
+	"en": "POISONOUS"
+  }
+]

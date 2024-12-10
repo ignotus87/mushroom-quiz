@@ -37,11 +37,16 @@
 
     <div id="app">
         <div class="header">
-            <div>
-                <div class="title">{{ title }}</div> |
-                Pontszám: {{ totalPoints }} / {{ numberOfAnsweredQuestions }} ({{ correctRatio }}) | Hibák: {{ mistakeIndexes.length }} <span :class="{ show: mistakeIndexes.length > 0, hide: mistakeIndexes.length === 0 }">| <button class="bootstrap-button" @click="restartWithMistakes()">Hibásak gyakorlása</button></span> | <button class="bootstrap-button" @click="reset()">Újrakezdés</button>
-                | <a href="mailto:mushroomquiz1@gmail.com?subject=Visszajelzés a weboldalról">Visszajelzés küldése</a>
-            </div>
+			<div class="flex-container">
+				<div id="title-in-header">
+					<div class="title">{{ title }}</div> |
+					{{ scoreText }}: {{ totalPoints }} / {{ numberOfAnsweredQuestions }} ({{ correctRatio }}) | {{ t$('Mistakes') }}: {{ mistakeIndexes.length }} <span :class="{ show: mistakeIndexes.length > 0, hide: mistakeIndexes.length === 0 }">| <button class="bootstrap-button" @click="restartWithMistakes()">{{ t$('PracticeMistakes') }}</button></span> | <button class="bootstrap-button" @click="reset()">{{ t$('Restart') }}</button>
+					| <a href="mailto:mushroomquiz1@gmail.com?subject={{ t$('FeedbackEmailSubject') }}">{{ t$('SendFeedback') }}</a>
+				</div>
+				<div id="language-selector">
+				<span :class="{ 'language-selected': language === 'hu' }" @click="selectLanguage('hu')">hu</span>&nbsp;|&nbsp;<span :class="{ 'language-selected': language === 'en' }" @click="selectLanguage('en')">en</span>
+				</div>
+			</div>
         </div>
 
         <div class="puzzle-container">
@@ -62,18 +67,18 @@
             <div :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }">
                 <div>
                     <fieldset class="radio-toolbar">
-                        <legend>Nehézség:</legend>
+                        <legend>{{ t$('Difficulty') }}:</legend>
                         <input type="radio" id="difficulty-beginner" name="difficulty" v-model="difficulty" value="beginner" :checked="isBeginner" />
-                        <label for="difficulty-beginner">kezdő</label>
+                        <label for="difficulty-beginner">{{ t$('beginner') }}</label>
                         <input type="radio" id="difficulty-advanced" name="difficulty" v-model="difficulty" value="advanced" :checked="isAdvanced" />
-                        <label for="difficulty-advanced">haladó</label>
+                        <label for="difficulty-advanced">{{ t$('advanced') }}</label>
                     </fieldset>
                 </div>
                 <div>
                     <fieldset>
-                        <legend>Játékindítás</legend>
-                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="reset10()">Új játék (10 kérdés)</button>
-                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">Új játék (összes faj [{{ totalSpeciesCount }}])</button>
+                        <legend>{{ t$('StartGame') }}</legend>
+                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="reset10()">{{ t$('NewGame10') }}</button>
+                        <button class="bootstrap-button" :class="{ 'show': isEndOfGame, 'hide': !isEndOfGame }" @click="resetAll()">{{ newGameAllSpeciesText }}</button>
                     </fieldset>
                 </div>
             </div>
@@ -87,7 +92,7 @@
                     <div class="carousel">
                         <div class="item" v-for="(puzzleImage, index) in puzzleImagesAll">
                             <img class="puzzle-image" v-bind:src="puzzleImage" :class="{ 'overlay': isAnswered }" alt="Mi ez a gomba?" />
-                            <i><small><br />Forrás: <u class="link" @click="openImageSource()">{{ imageSource }}</u></small></i>
+                            <i><small><br />{{ Source }}: <u class="link" @click="openImageSource()">{{ imageSource }}</u></small></i>
                         </div>
                     </div>
 

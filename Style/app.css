@@ -337,3 +337,16 @@ fieldset {
     display: inline-block;
     text-align: right;
 }
+
+#title-in-header {
+	flex: 1;
+}
+
+#language-selector {
+	text-align: right;
+	vertical-align: top;
+}
+
+.language-selected {
+	font-weight: bold;
+}

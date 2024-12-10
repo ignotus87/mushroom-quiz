@@ -5,16 +5,22 @@ const speciesImport = import("./Species/speciesList.json", {
     with: { type: 'json' }
 });
 
+const translationImport = import("./Species/translation.json", {
+    assert: { type: 'json' },
+    with: { type: 'json' }
+});
+
 speciesImport.then(data => {
+translationImport.then(translationData => {
 
     const { createApp } = Vue
 
     createApp({
         data(speciesList) {
             return {
-                title: 'Magyarország gombái',
                 speciesList: data.default,
                 puzzleItems: data.default,
+				dictionary: translationData.default,
                 puzzle: null,
                 incorrect1: '',
                 incorrect2: '',
@@ -38,10 +44,16 @@ speciesImport.then(data => {
                 continueTimeoutHandle: null,
                 timeoutSeconds: 0,
                 isEndOfGame: true,
-                difficulty: 'advanced'
+                difficulty: 'advanced',
+				language: 'hu'
             }
         },
         computed: {
+			title() { return this.translate('FungiOfHungary'); },
+			scoreText() { return this.translate('Score'); },
+			mistakesText() { return this.translate('Mistakes'); },
+			newGameAllSpeciesText() { return this.translate('NewGameAllSpecies').replace('{{ totalSpeciesCount }}', this.speciesList.length) },
+			
             isBeginner() {
                 return this.difficulty === 'beginner';
             },
@@ -49,7 +61,7 @@ speciesImport.then(data => {
                 return this.difficulty === 'advanced';
             },
             nextButtonText() {
-                return "Tovább (" + this.timeoutSeconds + ")";
+                return this.t$('Continue') + " (" + this.timeoutSeconds + ")";
             },
             totalSpeciesCount() {
                 return this.speciesList.length;
@@ -57,8 +69,14 @@ speciesImport.then(data => {
             totalPuzzleItemsCount() {
                 return this.puzzleItems.length;
             },
+			localizedSpeciesNameProperty() {
+				return this.language === 'hu' ? 'Name' : 'NameEn';
+			},
+			localizedDistinctionInfoProperty() {
+				return this.language === 'hu' ? 'DistinctionInfo' : 'DistinctionInfoEn';
+			},
             puzzleName() {
-                return this.puzzle.Name;
+                return this.puzzle[this.localizedSpeciesNameProperty];
             },
             puzzleImage() {
                 return this.getPuzzleImageByIndex(this.imageIndex);
@@ -102,9 +120,9 @@ speciesImport.then(data => {
                         return "Gombakvíz";
                     }
                     else if (this.gameType === 'all' || this.gameType === '10') {
-                        return "Melyik gombafajt látod a képen?";
+                        return this.translate('WhatFungiSpeciesDoYouSeeInThePicture');
                     } else {
-                        return "Hibásak gyakorlása: Melyik gombafajt látod a képen?";
+                        return this.translate('PracticeMistakes');
                     }
                 }
             },
@@ -121,13 +139,13 @@ speciesImport.then(data => {
                 }
                 if (this.puzzle.EdibilityCategory !== undefined) {
                     if (this.puzzle.EdibilityCategory === 'edible') {
-                        temp += "&#127860; ehető";
+                        temp += "&#127860; " + this.t$(this.puzzle.EdibilityCategory);
                     } else if (this.puzzle.EdibilityCategory === 'conditionallyEdible') {
-                        temp += "&#x26A0;&#127860;  feltételesen ehető";
+                        temp += "&#x26A0;&#127860; " + this.t$(this.puzzle.EdibilityCategory);
                     } else if (this.puzzle.EdibilityCategory === 'nonEdible') {
-                        temp += "&#x1F922; nem ehető";
+                        temp += "&#x1F922; " + this.t$(this.puzzle.EdibilityCategory);
                     } else if (this.puzzle.EdibilityCategory === 'poisonous') {
-                        temp += "&#x1F571; MÉRGEZŐ";
+                        temp += "&#x1F571; " + this.t$(this.puzzle.EdibilityCategory);
                     } else {
                         temp += "???" + this.puzzle.EdibilityCategory;
                     }
@@ -143,6 +161,18 @@ speciesImport.then(data => {
             }
         },
         methods: {
+			translate(text) {
+				let found = this.dictionary.find((item) => item.key === text);
+				if (found !== undefined && found.hasOwnProperty(this.language)) {
+					return found[this.language];
+				}
+				else {
+					return text;
+				}
+			},
+			t$(text) {
+				return this.translate(text);
+			},
             getPuzzleImageByIndex(theIndex) {
                 return "./SpeciesImages/" + this.puzzle.ID + (theIndex === 0 ? "" : "_" + (theIndex + 1).toString()) + ".jpg";
             },
@@ -288,7 +318,7 @@ speciesImport.then(data => {
                 var indexOfAnswer = this.choices.indexOf(answer);
 
                 if (this.isCorrect(answer)) {
-                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes!" />' + this.puzzle.Name + '</p><i class="scientific-name">' + this.puzzle.ScientificName + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
+                    this.comment = '<p><img class="right-wrong-image" src="Images/green_tick.png" alt="' + this.translate('AnswerIsRight') + '!" />' + this.puzzle[this.localizedSpeciesNameProperty] + '</p><i class="scientific-name">' + this.puzzle.ScientificName + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle[this.localizedDistinctionInfoProperty] + "</div>";
                     this.choiceIsRight[indexOfAnswer] = true;
                     this.totalPoints++;
                     this.numberOfCorrectAnswers++;
@@ -296,9 +326,9 @@ speciesImport.then(data => {
                     this.timeoutSeconds = 4;
                 }
                 else {
-                    this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="Helytelen!" />' + answer + '<br/>' +
-                        '<img class="right-wrong-image" src="Images/green_tick.png" alt="Helyes:">' + this.puzzle.Name + '</p>' +
-                        '<i class="scientific-name">' + this.puzzle.ScientificName + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle.DistinctionInfo + "</div>";
+                    this.comment = '<p><img class="right-wrong-image" src="Images/red_x.png" alt="' + this.translate('AnswerIsWrong') + '!" />' + answer + '<br/>' +
+                        '<img class="right-wrong-image" src="Images/green_tick.png" alt="' + this.translate('AnswerIsRight') + ':">' + this.puzzle[this.localizedSpeciesNameProperty] + '</p>' +
+                        '<i class="scientific-name">' + this.puzzle.ScientificName + '</i><br/>' + this.edibilityInfo + '<br/><div class="distinction-info">' + this.puzzle[this.localizedDistinctionInfoProperty] + "</div>";
                     this.choiceIsWrong[indexOfAnswer] = true;
                     this.mistakeIndexes.push(this.puzzle.ID);
                     var indexOfCorrectAnswer = this.choices.indexOf(this.puzzleName);
@@ -347,6 +377,14 @@ speciesImport.then(data => {
                 this.isAnswered = false;
                 this.isWrongAnswer = false;
                 this.gameResultComment = '';
+				
+				if (navigator.language === 'hu-HU' || navigator.language === 'hu')
+				{
+					this.language = 'hu';
+				}
+				else {
+					this.language = 'en';
+				}
             },
             startQuiz() {
                 this.previousPuzzleIDs = [];
@@ -393,11 +431,25 @@ speciesImport.then(data => {
             },
             endGame() {
                 this.isEndOfGame = true;
-                this.gameResultComment = "&#127937; Vége a játéknak! Eredmény: " + Math.floor(this.totalPoints / this.numberOfAnsweredQuestions * 100) + '%';
+                this.gameResultComment = "&#127937; " + this.translate('GameOver') + ' ' + this.translate('Result') + ': ' + Math.floor(this.totalPoints / this.numberOfAnsweredQuestions * 100) + '%';
             },
             randomizeChoices() {
-                this.choices = this.shuffle([this.puzzleName, this.incorrect1.Name, this.incorrect2.Name, this.incorrect3.Name]);
+                this.choices = this.shuffle([this.getLocalizedNameFromSpecies(this.puzzle), this.getLocalizedNameFromSpecies(this.incorrect1), this.getLocalizedNameFromSpecies(this.incorrect2), this.getLocalizedNameFromSpecies(this.incorrect3)]);
             },
+			getLocalizedNameFromSpecies(species) {
+				if (species.hasOwnProperty(this.localizedSpeciesNameProperty))
+				{
+					return species[this.localizedSpeciesNameProperty];
+				}
+				else if (species.hasOwnProperty("ScientificName")) 
+				{
+					return species["ScientificName"];
+				}
+				else 
+				{
+					return "ID" + species.ID;
+				}
+			},
             resetChoiceColors() {
                 this.choiceIsRight = [false, false, false, false];
                 this.choiceIsWrong = [false, false, false, false];
@@ -418,10 +470,14 @@ speciesImport.then(data => {
                     this.nextPuzzle();
                     this.comment = '';
                 }
-            }
+            },
+			selectLanguage(selectedLanguage) {
+				this.language = selectedLanguage;
+			}
         },
         created() {
             this.setupQuiz()
         }
     }).mount('#app')
+});
 });
