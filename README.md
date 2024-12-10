@@ -1,7 +1,7 @@
 # mushroom-quiz
 
 ## what's this?
-A fish quiz for the mushrooms of Hungary.
+A quiz for the mushrooms of Hungary.
 
 ## deployed app url
 https://ignotus87.github.io/mushroom-quiz/
