@@ -33,20 +33,20 @@
 
 <body>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="Script/vue.global.js"></script>
 
     <div id="app">
         <div class="header">
-			<div class="flex-container">
-				<div id="title-in-header">
-					<div class="title">{{ title }}</div> |
-					{{ scoreText }}: {{ totalPoints }} / {{ numberOfAnsweredQuestions }} ({{ correctRatio }}) | {{ t$('Mistakes') }}: {{ mistakeIndexes.length }} <span :class="{ show: mistakeIndexes.length > 0, hide: mistakeIndexes.length === 0 }">| <button class="bootstrap-button" @click="restartWithMistakes()">{{ t$('PracticeMistakes') }}</button></span> | <button class="bootstrap-button" @click="reset()">{{ t$('Restart') }}</button>
-					| <a href="mailto:mushroomquiz1@gmail.com?subject={{ t$('FeedbackEmailSubject') }}">{{ t$('SendFeedback') }}</a>
-				</div>
-				<div id="language-selector">
-				<span :class="{ 'language-selected': language === 'hu' }" @click="selectLanguage('hu')">hu</span>&nbsp;|&nbsp;<span :class="{ 'language-selected': language === 'en' }" @click="selectLanguage('en')">en</span>
-				</div>
-			</div>
+            <div class="flex-container">
+                <div id="title-in-header">
+                    <div class="title">{{ title }}</div> |
+                    {{ scoreText }}: {{ totalPoints }} / {{ numberOfAnsweredQuestions }} ({{ correctRatio }}) | {{ t$('Mistakes') }}: {{ mistakeIndexes.length }} <span :class="{ show: mistakeIndexes.length > 0, hide: mistakeIndexes.length === 0 }">| <button class="bootstrap-button" @click="restartWithMistakes()">{{ t$('PracticeMistakes') }}</button></span> | <button class="bootstrap-button" @click="reset()">{{ t$('Restart') }}</button>
+                    | <a href="mailto:mushroomquiz1@gmail.com?subject={{ t$('FeedbackEmailSubject') }}">{{ t$('SendFeedback') }}</a>
+                </div>
+                <div id="language-selector">
+                    <span :class="{ 'language-selected': language === 'hu' }" @click="selectLanguage('hu')">hu</span>&nbsp;|&nbsp;<span :class="{ 'language-selected': language === 'en' }" @click="selectLanguage('en')">en</span>
+                </div>
+            </div>
         </div>
 
         <div class="puzzle-container">
