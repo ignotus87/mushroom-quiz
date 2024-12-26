@@ -5,7 +5,7 @@ const speciesImport = import("./Species/speciesList.json", {
     with: { type: 'json' }
 });
 
-const translationImport = import("./Species/translation.json", {
+const translationImport = import("./Translation/translation.json", {
     assert: { type: 'json' },
     with: { type: 'json' }
 });
