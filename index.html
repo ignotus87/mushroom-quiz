@@ -87,7 +87,8 @@
 
                 <div class="carousel-wrapper">
 
-                    <button class="left" @click="slideImageLeft()" :class="{ 'show': hasMoreImagesLeft, 'hide': !hasMoreImagesLeft }">&lt;</button>
+                    <!-- Hidden temporarily -->
+                    <button class="left hide" @click="slideImageLeft()">&lt;</button>
 
                     <div class="carousel">
                         <div class="item" v-for="(puzzleImage, index) in puzzleImagesAll">
@@ -96,7 +97,8 @@
                         </div>
                     </div>
 
-                    <button class="right" @click="slideImageRight()" :class="{ 'show': hasMoreImagesRight, 'hide': !hasMoreImagesRight }">&gt;</button>
+                    <!-- Hidden temporarily -->
+                    <button class="right hide" @click="slideImageRight()">&gt;</button>
 
                 </div>
 
