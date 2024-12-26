@@ -104,9 +104,7 @@
                     <span v-for="(puzzleImage, index) in puzzleImagesAll" class="dot" :class="{ 'active': imageIndex === index }" @click="changeSlide(index)"></span>
                 </div>
 
-
             </div>
-
 
             <div class="choice-container" :class="{ 'show': !isEndOfGame && !isAnswered, 'hide': isEndOfGame || isAnswered }">
                 <div class="choice">
